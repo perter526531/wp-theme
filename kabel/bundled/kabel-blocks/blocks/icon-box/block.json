@@ -1,0 +1,222 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 2,
+    "name": "kbl/icon-box",
+    "title": "Icon box (Kabel)",
+    "category": "kabel",
+    "keywords": [
+        "kabel",
+        "icon box",
+        "feature",
+        "card",
+        "图标",
+        "图标框",
+        "特性"
+    ],
+    "description": "Icon + heading + paragraph in one card — edit every part inline.",
+    "supports": {
+        "anchor": true,
+        "customClassName": true
+    },
+    "attributes": {
+        "anchor": {
+            "type": "string",
+            "source": "attribute",
+            "attribute": "id",
+            "selector": "*"
+        },
+        "iconName": {
+            "type": "string",
+            "default": "check"
+        },
+        "iconColor": {
+            "type": "string"
+        },
+        "iconBg": {
+            "type": "string"
+        },
+        "iconPad": {
+            "type": "number"
+        },
+        "iconRadius": {
+            "type": "number"
+        },
+        "iconValign": {
+            "type": "string"
+        },
+        "title": {
+            "type": "string",
+            "source": "html",
+            "selector": ".kbl3-ibox__title"
+        },
+        "text": {
+            "type": "string",
+            "source": "html",
+            "selector": ".kbl3-ibox__text"
+        },
+        "layout": {
+            "type": "string",
+            "default": "v"
+        },
+        "align": {
+            "type": "string",
+            "default": "left"
+        },
+        "iconSize": {
+            "type": "number"
+        },
+        "bgColor": {
+            "type": "string"
+        },
+        "padding": {
+            "type": "number",
+            "default": 24
+        },
+        "radius": {
+            "type": "number"
+        },
+        "shadow": {
+            "type": "string"
+        },
+        "shadowX": {
+            "type": "number"
+        },
+        "shadowY": {
+            "type": "number"
+        },
+        "shadowB": {
+            "type": "number"
+        },
+        "shadowS": {
+            "type": "number"
+        },
+        "shadowColor": {
+            "type": "string"
+        },
+        "borderWidth": {
+            "type": "number"
+        },
+        "borderColor": {
+            "type": "string"
+        },
+        "borderStyle": {
+            "type": "string"
+        },
+        "fontSize": {
+            "type": "number"
+        },
+        "fontSizeT": {
+            "type": "number"
+        },
+        "fontSizeM": {
+            "type": "number"
+        },
+        "gFrom": {
+            "type": "string"
+        },
+        "gTo": {
+            "type": "string"
+        },
+        "gAngle": {
+            "type": "number",
+            "default": 135
+        },
+        "gType": {
+            "type": "string"
+        },
+        "hoverLift": {
+            "type": "boolean"
+        },
+        "anim": {
+            "type": "string"
+        },
+        "animDelay": {
+            "type": "number"
+        },
+        "hideD": {
+            "type": "boolean"
+        },
+        "hideT": {
+            "type": "boolean"
+        },
+        "hideM": {
+            "type": "boolean"
+        },
+        "mt": {
+            "type": "number"
+        },
+        "mb": {
+            "type": "number"
+        },
+        "mr": {
+            "type": "number"
+        },
+        "ml": {
+            "type": "number"
+        },
+        "mtM": {
+            "type": "number"
+        },
+        "mbM": {
+            "type": "number"
+        },
+        "pt": {
+            "type": "number"
+        },
+        "pr": {
+            "type": "number"
+        },
+        "pb": {
+            "type": "number"
+        },
+        "pl": {
+            "type": "number"
+        },
+        "customClass": {
+            "type": "string"
+        },
+        "zIndex": {
+            "type": "number"
+        },
+        "overflow": {
+            "type": "string"
+        },
+        "rot": {
+            "type": "number"
+        },
+        "scale": {
+            "type": "number"
+        },
+        "tx": {
+            "type": "number"
+        },
+        "ty": {
+            "type": "number"
+        },
+        "padM": {
+            "type": "number"
+        },
+        "iconSizeT": {
+            "type": "number"
+        },
+        "iconSizeM": {
+            "type": "number"
+        },
+        "mtT": {
+            "type": "number"
+        },
+        "mbT": {
+            "type": "number"
+        },
+        "uid": {
+            "type": "string"
+        },
+        "cssText": {
+            "type": "string"
+        }
+    },
+    "textdomain": "kabel-blocks",
+    "editorScript": "kabel-blocks-v3",
+    "style": "kabel-blocks-v3",
+    "editorStyle": "kabel-blocks-v3-editor"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "kabel-blocks-build",
+  "private": true,
+  "version": "3.3.0",
+  "description": "Build pipeline for the Kabel Blocks editor bundle (JSX -> plain JS against window.wp globals).",
+  "scripts": {
+    "build": "node build.mjs",
+    "watch": "node build.mjs --watch"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.0"
+  }
+}

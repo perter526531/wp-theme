@@ -1,0 +1,19 @@
+/*
+Theme Name: Kabel
+Author: Kabel Team
+Description: High-end decorative coating brand theme for Kabel Art Paint (Druento, Torino). Dark-luxury design system: black canvas, deep navy and bronze accents, self-hosted Barlow + Oregano typography. Includes product families catalog with structured spec tables, color collections, project references with category filtering, distributor & procurement pages, blog, and a built-in inquiry management system. Runs on the Kabel Blocks engine with one-click site bootstrap. Zero commercial dependencies, translation-ready.
+Version: 1.6.6
+Requires at least: 6.5
+Tested up to: 6.7
+Requires PHP: 8.1
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: kabel
+Tags: b2b, manufacturing, one-column, custom-menu, custom-logo, featured-images, translation-ready, block-styles, wide-blocks
+*/
+
+/*
+ * Design tokens live in assets/css/main.css (CSS custom properties) and are
+ * mirrored in theme.json for the block editor. This file only carries the
+ * required theme header above — keep all styles in assets/css/main.css.
+ */

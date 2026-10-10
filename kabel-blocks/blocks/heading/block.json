@@ -1,0 +1,163 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 2,
+    "name": "kbl/heading",
+    "title": "Heading (Kabel)",
+    "category": "kabel",
+    "keywords": [
+        "kabel",
+        "heading",
+        "title",
+        "标题",
+        "标题",
+        "大标题",
+        "眉标"
+    ],
+    "description": "Inline-editable title with brand sizes — click and type right on the page.",
+    "supports": {
+        "anchor": true,
+        "customClassName": true
+    },
+    "attributes": {
+        "anchor": {
+            "type": "string",
+            "source": "attribute",
+            "attribute": "id",
+            "selector": "*"
+        },
+        "text": {
+            "type": "string",
+            "source": "html",
+            "selector": "h1,h2,h3,h4,h5,h6"
+        },
+        "level": {
+            "type": "number",
+            "default": 2
+        },
+        "size": {
+            "type": "string",
+            "default": "m"
+        },
+        "align": {
+            "type": "string"
+        },
+        "color": {
+            "type": "string"
+        },
+        "eyebrow": {
+            "type": "boolean"
+        },
+        "contentWidth": {
+            "type": "number"
+        },
+        "blockAlign": {
+            "type": "string"
+        },
+        "fontSize": {
+            "type": "number"
+        },
+        "fontSizeT": {
+            "type": "number"
+        },
+        "fontSizeM": {
+            "type": "number"
+        },
+        "fontWeight": {
+            "type": "number"
+        },
+        "lineHeight": {
+            "type": "number"
+        },
+        "letterSpacing": {
+            "type": "number"
+        },
+        "textTransform": {
+            "type": "string"
+        },
+        "anim": {
+            "type": "string"
+        },
+        "animDelay": {
+            "type": "number"
+        },
+        "hideD": {
+            "type": "boolean"
+        },
+        "hideT": {
+            "type": "boolean"
+        },
+        "hideM": {
+            "type": "boolean"
+        },
+        "mt": {
+            "type": "number"
+        },
+        "mb": {
+            "type": "number"
+        },
+        "mr": {
+            "type": "number"
+        },
+        "ml": {
+            "type": "number"
+        },
+        "mtM": {
+            "type": "number"
+        },
+        "mbM": {
+            "type": "number"
+        },
+        "pt": {
+            "type": "number"
+        },
+        "pr": {
+            "type": "number"
+        },
+        "pb": {
+            "type": "number"
+        },
+        "pl": {
+            "type": "number"
+        },
+        "customClass": {
+            "type": "string"
+        },
+        "zIndex": {
+            "type": "number"
+        },
+        "overflow": {
+            "type": "string"
+        },
+        "rot": {
+            "type": "number"
+        },
+        "scale": {
+            "type": "number"
+        },
+        "tx": {
+            "type": "number"
+        },
+        "ty": {
+            "type": "number"
+        },
+        "padM": {
+            "type": "number"
+        },
+        "uid": {
+            "type": "string"
+        },
+        "cssText": {
+            "type": "string"
+        },
+        "mtT": {
+            "type": "number"
+        },
+        "mbT": {
+            "type": "number"
+        }
+    },
+    "textdomain": "kabel-blocks",
+    "editorScript": "kabel-blocks-v3",
+    "style": "kabel-blocks-v3",
+    "editorStyle": "kabel-blocks-v3-editor"
+}

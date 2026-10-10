@@ -1,0 +1,248 @@
+{
+        "$schema": "https://schemas.wp.org/trunk/theme.json",
+        "version": 3,
+        "settings": {
+                "layout": {
+                        "contentSize": "768px",
+                        "wideSize": "1290px"
+                },
+                "useRootPaddingAwareAlignments": true,
+                "color": {
+                        "custom": true,
+                        "customGradient": true,
+                        "defaultPalette": false,
+                        "defaultGradients": false,
+                        "palette": [
+                                {
+                                        "slug": "base",
+                                        "name": "Base (body black)",
+                                        "color": "#000000"
+                                },
+                                {
+                                        "slug": "near-black",
+                                        "name": "Near Black (Zone A)",
+                                        "color": "#0B0B0D"
+                                },
+                                {
+                                        "slug": "navy-night",
+                                        "name": "Navy Night (Zone B)",
+                                        "color": "#101828"
+                                },
+                                {
+                                        "slug": "paper-alt",
+                                        "name": "Paper Alt (Zone B raised)",
+                                        "color": "#151E33"
+                                },
+                                {
+                                        "slug": "card",
+                                        "name": "Card Surface",
+                                        "color": "#26272B"
+                                },
+                                {
+                                        "slug": "line",
+                                        "name": "Line (hairline borders)",
+                                        "color": "#3A3B40"
+                                },
+                                {
+                                        "slug": "brand-navy",
+                                        "name": "Brand Navy (CTA)",
+                                        "color": "#222E5E"
+                                },
+                                {
+                                        "slug": "brand-navy-deep",
+                                        "name": "Brand Navy Hover",
+                                        "color": "#101839"
+                                },
+                                {
+                                        "slug": "bronze",
+                                        "name": "Antique Bronze (accent)",
+                                        "color": "#B39A74"
+                                },
+                                {
+                                        "slug": "bronze-bright",
+                                        "name": "Bronze Bright (hover)",
+                                        "color": "#D3BC97"
+                                },
+                                {
+                                        "slug": "bronze-deep",
+                                        "name": "Bronze Deep",
+                                        "color": "#8F7A57"
+                                },
+                                {
+                                        "slug": "warm-paper",
+                                        "name": "Warm Paper (light panels)",
+                                        "color": "#E7E3DA"
+                                },
+                                {
+                                        "slug": "ink-muted",
+                                        "name": "Muted Ink (secondary text)",
+                                        "color": "#B9BDC7"
+                                },
+                                {
+                                        "slug": "success",
+                                        "name": "Success",
+                                        "color": "#4C7A5C"
+                                },
+                                {
+                                        "slug": "warning",
+                                        "name": "Warning",
+                                        "color": "#B0813C"
+                                },
+                                {
+                                        "slug": "danger",
+                                        "name": "Danger",
+                                        "color": "#A34A44"
+                                },
+                                {
+                                        "slug": "white",
+                                        "name": "White (text)",
+                                        "color": "#FFFFFF"
+                                }
+                        ]
+                },
+                "typography": {
+                        "fluid": true,
+                        "fontFamilies": [
+                                {
+                                        "slug": "display",
+                                        "name": "Barlow (Headings)",
+                                        "fontFamily": "\"Barlow\", \"Noto Sans SC\", system-ui, sans-serif"
+                                },
+                                {
+                                        "slug": "body",
+                                        "name": "Barlow (Body)",
+                                        "fontFamily": "Barlow, \"Noto Sans SC\", system-ui, sans-serif"
+                                },
+                                {
+                                        "slug": "hand",
+                                        "name": "Oregano (Handwritten accents)",
+                                        "fontFamily": "Oregano, \"Barlow\", cursive"
+                                }
+                        ],
+                        "fontSizes": [
+                                {
+                                        "slug": "small",
+                                        "name": "Small",
+                                        "size": "0.875rem",
+                                        "fluid": false
+                                },
+                                {
+                                        "slug": "medium",
+                                        "name": "Medium",
+                                        "size": "1rem",
+                                        "fluid": false
+                                },
+                                {
+                                        "slug": "large",
+                                        "name": "Large",
+                                        "size": "1.125rem"
+                                },
+                                {
+                                        "slug": "x-large",
+                                        "name": "Extra Large",
+                                        "size": "clamp(1.5rem, 1.4rem + 0.5vw, 2.25rem)"
+                                },
+                                {
+                                        "slug": "xx-large",
+                                        "name": "Display",
+                                        "size": "clamp(2rem, 1.6rem + 2vw, 3.75rem)"
+                                }
+                        ]
+                },
+                "spacing": {
+                        "units": ["px", "rem", "%", "vw"],
+                        "spacingSizes": [
+                                {
+                                        "slug": "20",
+                                        "name": "1",
+                                        "size": "1rem"
+                                },
+                                {
+                                        "slug": "40",
+                                        "name": "2",
+                                        "size": "1.5rem"
+                                },
+                                {
+                                        "slug": "50",
+                                        "name": "3",
+                                        "size": "2rem"
+                                },
+                                {
+                                        "slug": "60",
+                                        "name": "4",
+                                        "size": "3rem"
+                                },
+                                {
+                                        "slug": "70",
+                                        "name": "5",
+                                        "size": "4rem"
+                                },
+                                {
+                                        "slug": "80",
+                                        "name": "6",
+                                        "size": "6rem"
+                                }
+                        ]
+                },
+                "border": {
+                        "radius": {
+                                "sm": "0",
+                                "md": "0",
+                                "lg": "0",
+                                "pill": "0"
+                        }
+                }
+        },
+        "styles": {
+                "color": {
+                        "background": "var(--wp--preset--color--base)",
+                        "text": "var(--wp--preset--color--white)"
+                },
+                "typography": {
+                        "fontFamily": "var(--wp--preset--font-family--body)",
+                        "fontSize": "var(--wp--preset--font-size--medium)",
+                        "lineHeight": "1.65"
+                },
+                "elements": {
+                        "heading": {
+                                "typography": {
+                                        "fontFamily": "var(--wp--preset--font-family--display)",
+                                        "fontWeight": "600",
+                                        "lineHeight": "1.15"
+                                }
+                        },
+                        "link": {
+                                "color": {
+                                        "text": "var(--wp--preset--color--bronze)"
+                                },
+                                ":hover": {
+                                        "color": {
+                                                "text": "#D3BC97"
+                                        }
+                                }
+                        },
+                        "button": {
+                                "border": {
+                                        "radius": "0"
+                                },
+                                "color": {
+                                        "background": "var(--wp--preset--color--brand-navy)",
+                                        "text": "#FFFFFF"
+                                },
+                                "typography": {
+                                        "fontFamily": "var(--wp--preset--font-family--display)",
+                                        "fontWeight": "600",
+                                        "letterSpacing": "0.08em",
+                                        "textTransform": "uppercase"
+                                }
+                        }
+                },
+                "blocks": {
+                        "core/button": {
+                                "border": {
+                                        "radius": "0"
+                                }
+                        }
+                }
+        }
+}

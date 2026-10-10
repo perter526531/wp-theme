@@ -1,0 +1,147 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 2,
+    "name": "kbl/stat",
+    "title": "Stat (Kabel)",
+    "category": "kabel",
+    "keywords": [
+        "kabel",
+        "stat",
+        "counter",
+        "number",
+        "数据",
+        "数据",
+        "数字",
+        "统计"
+    ],
+    "description": "Big number with optional prefix/suffix and a label — the counters-row primitive.",
+    "supports": {
+        "anchor": true,
+        "customClassName": true
+    },
+    "attributes": {
+        "anchor": {
+            "type": "string",
+            "source": "attribute",
+            "attribute": "id",
+            "selector": "*"
+        },
+        "pre": {
+            "type": "string"
+        },
+        "number": {
+            "type": "string",
+            "source": "html",
+            "selector": ".kbl3-stat__numtext"
+        },
+        "suf": {
+            "type": "string"
+        },
+        "label": {
+            "type": "string",
+            "source": "html",
+            "selector": ".kbl3-stat__label"
+        },
+        "align": {
+            "type": "string",
+            "default": "center"
+        },
+        "color": {
+            "type": "string"
+        },
+        "fontSize": {
+            "type": "number"
+        },
+        "fontSizeT": {
+            "type": "number"
+        },
+        "fontSizeM": {
+            "type": "number"
+        },
+        "anim": {
+            "type": "string"
+        },
+        "animDelay": {
+            "type": "number"
+        },
+        "hideD": {
+            "type": "boolean"
+        },
+        "hideT": {
+            "type": "boolean"
+        },
+        "hideM": {
+            "type": "boolean"
+        },
+        "mt": {
+            "type": "number"
+        },
+        "mb": {
+            "type": "number"
+        },
+        "mr": {
+            "type": "number"
+        },
+        "ml": {
+            "type": "number"
+        },
+        "mtM": {
+            "type": "number"
+        },
+        "mbM": {
+            "type": "number"
+        },
+        "pt": {
+            "type": "number"
+        },
+        "pr": {
+            "type": "number"
+        },
+        "pb": {
+            "type": "number"
+        },
+        "pl": {
+            "type": "number"
+        },
+        "customClass": {
+            "type": "string"
+        },
+        "zIndex": {
+            "type": "number"
+        },
+        "overflow": {
+            "type": "string"
+        },
+        "rot": {
+            "type": "number"
+        },
+        "scale": {
+            "type": "number"
+        },
+        "tx": {
+            "type": "number"
+        },
+        "ty": {
+            "type": "number"
+        },
+        "padM": {
+            "type": "number"
+        },
+        "mtT": {
+            "type": "number"
+        },
+        "mbT": {
+            "type": "number"
+        },
+        "uid": {
+            "type": "string"
+        },
+        "cssText": {
+            "type": "string"
+        }
+    },
+    "textdomain": "kabel-blocks",
+    "editorScript": "kabel-blocks-v3",
+    "style": "kabel-blocks-v3",
+    "editorStyle": "kabel-blocks-v3-editor"
+}

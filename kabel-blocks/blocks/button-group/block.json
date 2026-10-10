@@ -1,0 +1,119 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 2,
+    "name": "kbl/button-group",
+    "title": "Button row (Kabel)",
+    "category": "kabel",
+    "keywords": [
+        "kabel",
+        "buttons",
+        "cta row",
+        "按钮组",
+        "多个按钮"
+    ],
+    "description": "Several buttons side by side — add or remove them freely.",
+    "supports": {
+        "anchor": true,
+        "customClassName": true
+    },
+    "attributes": {
+        "anchor": {
+            "type": "string",
+            "source": "attribute",
+            "attribute": "id",
+            "selector": "*"
+        },
+        "gap": {
+            "type": "number",
+            "default": 14
+        },
+        "align": {
+            "type": "string"
+        },
+        "hideD": {
+            "type": "boolean"
+        },
+        "hideT": {
+            "type": "boolean"
+        },
+        "hideM": {
+            "type": "boolean"
+        },
+        "mt": {
+            "type": "number"
+        },
+        "mb": {
+            "type": "number"
+        },
+        "mr": {
+            "type": "number"
+        },
+        "ml": {
+            "type": "number"
+        },
+        "mtM": {
+            "type": "number"
+        },
+        "mbM": {
+            "type": "number"
+        },
+        "pt": {
+            "type": "number"
+        },
+        "pr": {
+            "type": "number"
+        },
+        "pb": {
+            "type": "number"
+        },
+        "pl": {
+            "type": "number"
+        },
+        "customClass": {
+            "type": "string"
+        },
+        "zIndex": {
+            "type": "number"
+        },
+        "overflow": {
+            "type": "string"
+        },
+        "rot": {
+            "type": "number"
+        },
+        "scale": {
+            "type": "number"
+        },
+        "tx": {
+            "type": "number"
+        },
+        "ty": {
+            "type": "number"
+        },
+        "padM": {
+            "type": "number"
+        },
+        "gapT": {
+            "type": "number"
+        },
+        "gapM": {
+            "type": "number"
+        },
+        "mtT": {
+            "type": "number"
+        },
+        "mbT": {
+            "type": "number"
+        },
+        "uid": {
+            "type": "string"
+        },
+        "cssText": {
+            "type": "string"
+        }
+    },
+    "textdomain": "kabel-blocks",
+    "editorScript": "kabel-blocks-v3",
+    "style": "kabel-blocks-v3",
+    "editorStyle": "kabel-blocks-v3-editor"
+}

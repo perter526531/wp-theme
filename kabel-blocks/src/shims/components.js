@@ -1,0 +1,29 @@
+/** Shim: @wordpress/components -> window.wp.components. */
+const wc = window.wp.components;
+
+export const PanelBody = wc.PanelBody;
+export const PanelRow = wc.PanelRow;
+export const Panel = wc.Panel;
+export const TabPanel = wc.TabPanel;
+export const RangeControl = wc.RangeControl;
+export const SelectControl = wc.SelectControl;
+export const TextControl = wc.TextControl;
+export const TextareaControl = wc.TextareaControl;
+export const ResizableBox = wc.ResizableBox;
+export const ToggleControl = wc.ToggleControl;
+export const ColorPalette = wc.ColorPalette;
+export const ColorIndicator = wc.ColorIndicator;
+export const Button = wc.Button;
+export const ButtonGroup = wc.ButtonGroup;
+export const ToolbarGroup = wc.ToolbarGroup;
+export const ToolbarButton = wc.ToolbarButton;
+export const Dropdown = wc.Dropdown;
+export const BaseControl = wc.BaseControl;
+export const Tooltip = wc.Tooltip;
+export const Spinner = wc.Spinner;
+export const Notice = wc.Notice;
+export const ExternalLink = wc.ExternalLink;
+export const Placeholder = wc.Placeholder;
+export const Disabled = wc.Disabled;
+export const ResponsiveWrapper = wc.ResponsiveWrapper;
+export const __experimentalGrid = wc.__experimentalGrid;

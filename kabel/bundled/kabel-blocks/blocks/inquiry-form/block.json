@@ -1,0 +1,125 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 2,
+    "name": "kbl/inquiry-form",
+    "title": "Inquiry form (Kabel)",
+    "category": "kabel",
+    "keywords": [
+        "kabel",
+        "form",
+        "inquiry",
+        "contact",
+        "询盘",
+        "询盘",
+        "表单",
+        "留言"
+    ],
+    "description": "The Kabel inquiry form — submissions land in the dashboard.",
+    "supports": {
+        "anchor": true,
+        "customClassName": true
+    },
+    "attributes": {
+        "anchor": {
+            "type": "string",
+            "source": "attribute",
+            "attribute": "id",
+            "selector": "*"
+        },
+        "title": {
+            "type": "string",
+            "default": "CONTACT US"
+        },
+        "sub": {
+            "type": "string",
+            "default": "Global Service · Local Response"
+        },
+        "email": {
+            "type": "string"
+        },
+        "buttonLabel": {
+            "type": "string",
+            "default": "Send Inquiry"
+        },
+        "hideD": {
+            "type": "boolean"
+        },
+        "hideT": {
+            "type": "boolean"
+        },
+        "hideM": {
+            "type": "boolean"
+        },
+        "mt": {
+            "type": "number"
+        },
+        "mb": {
+            "type": "number"
+        },
+        "mr": {
+            "type": "number"
+        },
+        "ml": {
+            "type": "number"
+        },
+        "mtM": {
+            "type": "number"
+        },
+        "mbM": {
+            "type": "number"
+        },
+        "mtT": {
+            "type": "number"
+        },
+        "mbT": {
+            "type": "number"
+        },
+        "uid": {
+            "type": "string"
+        },
+        "cssText": {
+            "type": "string"
+        },
+        "pt": {
+            "type": "number"
+        },
+        "pr": {
+            "type": "number"
+        },
+        "pb": {
+            "type": "number"
+        },
+        "pl": {
+            "type": "number"
+        },
+        "customClass": {
+            "type": "string"
+        },
+        "zIndex": {
+            "type": "number"
+        },
+        "overflow": {
+            "type": "string"
+        },
+        "rot": {
+            "type": "number"
+        },
+        "scale": {
+            "type": "number"
+        },
+        "tx": {
+            "type": "number"
+        },
+        "ty": {
+            "type": "number"
+        },
+        "padM": {
+            "type": "number"
+        }
+    },
+    "textdomain": "kabel-blocks",
+    "editorScript": "kabel-blocks-v3",
+    "style": "kabel-blocks-v3",
+    "editorStyle": "kabel-blocks-v3-editor",
+    "render": "file:./render.php"
+}

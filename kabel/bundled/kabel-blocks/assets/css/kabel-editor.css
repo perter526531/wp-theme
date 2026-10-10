@@ -1,0 +1,729 @@
+/*
+ * Kabel Blocks v3 — editor-only styles (block canvas + sidebar controls).
+ * The front-end skin (kabel-blocks.css) is also loaded inside the editor,
+ * so this file only adds canvas ergonomics and inspector polish.
+ */
+
+/* ---------------- Inspector tabs ---------------- */
+
+.kbl3-inspector-tabs .components-tab-panel__tabs {
+        display: flex;
+        border-bottom: 1px solid #e0e0e0;
+        margin: 0 -16px 16px; /* panel body padding compensation */
+        padding: 0 12px;
+}
+.kbl3-inspector-tabs .components-tab-panel__tabs-item {
+        flex: 1;
+        justify-content: center;
+        border-radius: 2px 2px 0 0;
+}
+.kbl3-tab > .components-base-control,
+.kbl3-tab > .components-panel__body,
+.kbl3-tab .kbl3-row { margin-bottom: 14px; }
+
+/* Icon picker grid */
+.kbl3-icon-picker {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 6px;
+        max-height: 260px;
+        overflow-y: auto;
+        padding: 2px;
+}
+.kbl3-icon-picker__btn {
+        height: 40px;
+        padding: 4px !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+.kbl3-icon-picker__btn svg {
+        width: 22px;
+        height: 22px;
+}
+
+/* Background image control */
+.kbl3-bg-ctl__thumb {
+        display: block;
+        width: 100%;
+        max-height: 120px;
+        object-fit: cover;
+        margin-bottom: 8px;
+        border: 1px solid #e0e0e0;
+}
+.kbl3-bg-ctl__btns {
+        display: flex;
+        gap: 8px;
+}
+
+/* Link popover (button block) */
+.kbl3-link-pop {
+        padding: 12px;
+        min-width: 260px;
+}
+
+/* ---------------- Canvas ergonomics ---------------- */
+
+/* Empty containers get a gentle hint outline */
+.kbl3-container:empty {
+        min-height: 84px;
+        outline: 1px dashed rgba(179, 154, 116, 0.55);
+        outline-offset: -10px;
+}
+.kbl3-col > .block-editor-inner-blocks > .block-editor-block-list__layout:empty {
+        min-height: 64px;
+        outline: 1px dashed rgba(179, 154, 116, 0.4);
+        outline-offset: -8px;
+}
+
+/* Appender buttons inside rows should not stretch */
+.kbl3-columns .block-list-appender {
+        margin-top: 0;
+        align-self: center;
+}
+
+/* Spacer selection feedback */
+.kbl3-spacer {
+        background-image: repeating-linear-gradient(
+                45deg,
+                transparent,
+                transparent 8px,
+                rgba(179, 154, 116, 0.12) 8px,
+                rgba(179, 154, 116, 0.12) 16px
+        );
+}
+.kbl3-spacer__label {
+        display: block;
+        text-align: center;
+        font-size: 11px;
+        letter-spacing: 0.08em;
+        color: #B39A74;
+        padding-top: 4px;
+        user-select: none;
+}
+
+/* Accordion editor replica */
+.kbl3-acc .kbl3-acc__qrow {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.6em;
+        padding: 1em 1.25em;
+}
+.kbl3-acc .kbl3-acc__q {
+        flex: 1;
+        font-weight: 600;
+        min-height: 1.5em;
+}
+.kbl3-acc__chev {
+        flex: 0 0 auto;
+        border: 0;
+        background: transparent;
+        color: #B39A74;
+        cursor: pointer;
+        padding: 4px;
+        line-height: 0;
+}
+.kbl3-acc.is-open .kbl3-acc__chev .dashicons-arrow-down-alt2 {
+        transform: rotate(180deg);
+}
+.kbl3-acc__chev .dashicons { transition: transform 0.18s ease; }
+.kbl3-acc .kbl3-acc__a {
+        padding: 0 1.25em 1.2em;
+        min-height: 1.2em;
+}
+.kbl3-acc .kbl3-acc__q::after { content: none; } /* chevron is a button in edit */
+
+/* Form replica inputs should look disabled but styled */
+.kbl3-form__replica input,
+.kbl3-form__replica textarea {
+        width: 100%;
+        font: inherit;
+        box-sizing: border-box;
+}
+.kbl3-form__hint {
+        font-size: 12px;
+        letter-spacing: 0.04em;
+        text-align: center;
+        opacity: 0.7;
+}
+
+/* Image placeholder alignment */
+.wp-block-kbl-image .components-placeholder {
+        margin-bottom: 0;
+}
+
+/* Image on-canvas resize: the ResizableBox wrapper hugs the img when no
+ * explicit px width is set, and carries the width while dragging. */
+.kbl3-fig .kbl3-fig__resize {
+        display: inline-block;
+        max-width: 100%;
+        vertical-align: top;
+}
+.kbl3-fig .kbl3-fig__resize .kbl3-img {
+        height: auto;
+}
+
+/* Column count control emphasis */
+.kbl3-row .components-button-group .is-primary {
+        background: #B39A74;
+}
+
+/* ---------------- Capability panels ---------------- */
+
+/* Device switcher (Typography panel) */
+.kbl3-device-switch {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin: 0 0 14px;
+}
+.kbl3-device-switch .dashicons {
+        width: 16px;
+        height: 16px;
+        font-size: 16px;
+}
+.kbl3-device-follows {
+        font-size: 11px;
+        font-style: italic;
+        color: #757575;
+}
+
+/* Small hint under the gradient angle control */
+.kbl3-panel-hint {
+        margin: 8px 0 14px;
+        font-size: 11px;
+        line-height: 1.5;
+        color: #757575;
+}
+
+/* ---------------- Canvas capability overrides ---------------- */
+
+/* Entrance animations never run in the canvas: front.js is not loaded in
+ * the editor, but enforce full visibility regardless. */
+.editor-styles-wrapper .kbl3-anim {
+        opacity: 1;
+        transform: none;
+        transition: none;
+}
+
+/* Device-hidden blocks stay selectable in the canvas: the front CSS hides
+ * them with display:none !important, so revert to the user-agent display
+ * and dim instead. Narrow canvas widths re-create tablet/mobile views. */
+.editor-styles-wrapper .kbl3-hide-d,
+.editor-styles-wrapper .kbl3-hide-t,
+.editor-styles-wrapper .kbl3-hide-m {
+        display: revert !important;
+        opacity: 0.45;
+        outline: 1px dashed rgba(179, 154, 116, 0.55);
+        outline-offset: 2px;
+}
+
+/* ---------------- v8-b content blocks ---------------- */
+
+/* Card: empty cover slot invites a click. */
+.kbl3-card__add {
+        display: block;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        padding: 0;
+        border: 0;
+        background: rgba(179, 154, 116, 0.08);
+        border: 1px dashed rgba(179, 154, 116, 0.5);
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 0.85rem;
+        letter-spacing: 0.04em;
+        cursor: pointer;
+}
+.kbl3-card__add:hover { color: var(--kbl3-bronze-bright, #D3BC97); border-color: var(--kbl3-bronze, #B39A74); }
+.kbl3-card__media .kbl3-card__img { cursor: pointer; }
+
+/* Tabs: the canvas has no kb-js flag, so mirror the front-end behavior
+ * (only the active panel visible) while editing. */
+.editor-styles-wrapper .kbl3-tabs__panel { display: none; }
+.editor-styles-wrapper .kbl3-tabs__panel.is-active { display: block; }
+
+/* Video: clicking the cover image swaps it; the play button does nothing. */
+.kbl3-video__cover .kbl3-video__img { cursor: pointer; }
+
+/* Team: portraits are click-to-replace. */
+.kbl3-team__photo .kbl3-team__img,
+.kbl3-team__photo .kbl3-team__phicon { cursor: pointer; }
+.kbl3-testi__avatar { cursor: pointer; }
+
+/* Sidebar repeater rows (tabs / team members / pricing features). */
+.kbl3-item-row {
+        padding: 10px 12px;
+        margin-bottom: 10px;
+        border: 1px solid #e0e0e0;
+        border-radius: 3px;
+        background: #fafafa;
+}
+.kbl3-item-row__btns {
+        display: flex;
+        gap: 6px;
+        margin-top: 4px;
+}
+
+/* Language switcher: the language-code input stays narrow. */
+.kbl3-lang-code input {
+        max-width: 96px;
+}
+
+/* ---------------- v9-a fine-grained controls ---------------- */
+
+/* Canvas sync: the front stylesheet loads in the editor as a dependency,
+ * these scoped re-assertions keep the new capabilities canvas-correct even
+ * if the handle graph ever changes. Values mirror kabel-blocks.css. */
+.editor-styles-wrapper .kbl3-columns {
+        gap: var(--kbl3-vgap, var(--kbl3-gap, 24px)) var(--kbl3-gap, 24px);
+}
+.editor-styles-wrapper .kbl3-section.kbl3-mid { display: flex; align-items: center; }
+.editor-styles-wrapper .kbl3-section.kbl3-mid > .kbl3-container { width: 100%; }
+.editor-styles-wrapper .kbl3-mt { margin-top: var(--kbl3-mt); }
+.editor-styles-wrapper .kbl3-mb { margin-bottom: var(--kbl3-mb); }
+@media (max-width: 781px) {
+        .editor-styles-wrapper .kbl3-columns.kbl3-reverse { flex-direction: column-reverse; }
+        .editor-styles-wrapper .kbl3-mt-m { margin-top: var(--kbl3-mt-m); }
+        .editor-styles-wrapper .kbl3-mb-m { margin-bottom: var(--kbl3-mb-m); }
+}
+
+/* Column drag-resize grip (edit-only, never saved): shown on every column
+ * except the last of its row. The column root is the positioning base. */
+.editor-styles-wrapper .kbl3-col { position: relative; }
+.kbl3-colresize {
+        position: absolute;
+        top: 25%;
+        height: 50%;
+        right: -11px;
+        width: 22px;
+        cursor: col-resize;
+        z-index: 20;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        touch-action: none;
+        user-select: none;
+}
+.kbl3-colresize::after {
+        content: "";
+        width: 3px;
+        height: 30px;
+        border-radius: 2px;
+        background: rgba(179, 154, 116, 0.55);
+        transition: background 0.15s ease;
+}
+.kbl3-colresize:hover::after,
+.kbl3-colresize:active::after {
+        background: #B39A74;
+}
+
+/* Column width share badge (edit-only, never saved): shows the current
+ * share ("40%") or "自动" at the column's bottom-right corner. v11: the
+ * badge is a real button — clicking opens a numeric popup (Stackable's
+ * ResizableTooltip). */
+.kbl3-colbadge {
+        position: absolute;
+        right: 6px;
+        bottom: 4px;
+        z-index: 20;
+        padding: 3px 7px;
+        font-size: 10px;
+        line-height: 1;
+        letter-spacing: 0.05em;
+        border-radius: 2px;
+        background: rgba(11, 11, 13, 0.85);
+        color: #D3BC97;
+        border: 1px solid rgba(179, 154, 116, 0.4);
+        cursor: pointer;
+        user-select: none;
+        white-space: nowrap;
+}
+.kbl3-colbadge:hover,
+.kbl3-colbadge:focus-visible {
+        background: #B39A74;
+        border-color: #B39A74;
+        color: #111113;
+}
+.kbl3-colbadge:focus-visible {
+        outline: 2px solid #D3BC97;
+        outline-offset: 1px;
+}
+
+/* Badge numeric popup (edit-only): Enter applies, Esc closes, Tab hops to
+ * the next column's badge. */
+.kbl3-colw-pop {
+        position: absolute;
+        right: 4px;
+        bottom: calc(100% + 8px);
+        z-index: 30;
+        width: 158px;
+        padding: 10px;
+        border-radius: 4px;
+        background: #1e1e1e;
+        color: #f0f0f0;
+        border: 1px solid rgba(179, 154, 116, 0.55);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+}
+.kbl3-colw-pop label {
+        display: block;
+        margin-bottom: 6px;
+        font-size: 10px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #D3BC97;
+}
+.kbl3-colw-pop input {
+        width: 100%;
+        padding: 4px 6px;
+        font-size: 13px;
+}
+.kbl3-colw-pop__hint {
+        display: block;
+        margin-top: 6px;
+        font-size: 10px;
+        line-height: 1.45;
+        color: #a7a7a7;
+}
+
+/* Left-edge drag grip (mirror of the right one, shown on every column
+ * except the first of its row). */
+.kbl3-colresize--l {
+        right: auto;
+        left: -11px;
+}
+
+/* ---------------- v11 Stackable-style column kit ---------------- */
+
+/* Layout picker: an empty columns row shows the seven insert-time layouts
+ * (100 / 50-50 / 30-70 / 70-30 / 33×3 / 25-50-25 / 25×4). */
+.kbl3-colpick {
+        padding: 30px 20px;
+        text-align: center;
+}
+.kbl3-colpick__title {
+        margin-bottom: 14px;
+        font-size: 13px;
+        font-weight: 600;
+        color: #1e1e1e;
+}
+.kbl3-colpick__grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        max-width: 430px;
+        margin: 0 auto;
+}
+.kbl3-colpick__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 7px;
+        width: 88px;
+        padding: 10px 6px 8px;
+        border: 1px solid #e0e0e0;
+        border-radius: 4px;
+        background: #fff;
+        color: #757575;
+        cursor: pointer;
+        transition: border-color 0.15s ease, color 0.15s ease, box-shadow 0.15s ease;
+}
+.kbl3-colpick__item:hover {
+        border-color: #B39A74;
+        color: #8a7355;
+        box-shadow: 0 2px 8px rgba(179, 154, 116, 0.3);
+}
+.kbl3-colpick__icon svg {
+        display: block;
+}
+.kbl3-colpick__label {
+        font-size: 11px;
+        line-height: 1;
+        white-space: nowrap;
+}
+
+/* Sidebar width kit: presets + proportional slider + number inputs. */
+.kbl3-colw {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+}
+.kbl3-colw-presets {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+}
+.kbl3-colw-preset {
+        display: flex;
+        gap: 2px;
+        width: 66px;
+        height: 30px;
+        padding: 4px;
+        border: 1px solid #d5d5d5;
+        border-radius: 3px;
+        background: #fff;
+        cursor: pointer;
+}
+.kbl3-colw-preset:hover {
+        border-color: #B39A74;
+}
+.kbl3-colw-preset.is-active {
+        border-color: #B39A74;
+        box-shadow: 0 0 0 1px #B39A74;
+        background: rgba(179, 154, 116, 0.08);
+}
+.kbl3-colw-box {
+        min-width: 3px;
+        border-radius: 1px;
+        background: #c3c3c3;
+}
+.kbl3-colw-preset.is-active .kbl3-colw-box {
+        background: #B39A74;
+}
+
+.kbl3-colw-bar {
+        position: relative;
+        display: flex;
+        height: 36px;
+        border: 1px solid rgba(179, 154, 116, 0.4);
+        border-radius: 3px;
+        background: rgba(179, 154, 116, 0.08);
+        user-select: none;
+        touch-action: none;
+}
+.kbl3-colw-seg {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 0;
+        box-shadow: inset -1px 0 0 rgba(179, 154, 116, 0.35);
+}
+.kbl3-colw-seg b {
+        padding: 0 2px;
+        font-size: 10px;
+        font-weight: 500;
+        color: #78624a;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+}
+.kbl3-colw-div {
+        position: absolute;
+        top: -6px;
+        height: calc(100% + 12px);
+        width: 16px;
+        transform: translateX(-50%);
+        cursor: col-resize;
+        z-index: 2;
+}
+.kbl3-colw-div::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 6px;
+        bottom: 6px;
+        width: 3px;
+        transform: translateX(-50%);
+        border-radius: 2px;
+        background: #B39A74;
+        opacity: 0.75;
+}
+.kbl3-colw-div:hover::after,
+.kbl3-colw-div:active::after {
+        opacity: 1;
+        box-shadow: 0 0 0 1px rgba(179, 154, 116, 0.45);
+}
+
+.kbl3-colw-inputs {
+        display: grid;
+        gap: 4px;
+}
+.kbl3-colw-inputs.is-many {
+        gap: 3px;
+}
+.kbl3-colw-input {
+        width: 100%;
+        min-width: 0;
+        padding: 3px 6px;
+        font-size: 12px;
+}
+.kbl3-colw-hint {
+        margin: 0;
+        font-size: 11px;
+        line-height: 1.5;
+        color: #757575;
+}
+
+/* Column order chips. */
+.kbl3-colsort {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+}
+.kbl3-colsort__chip {
+        display: inline-flex;
+        align-items: center;
+        gap: 2px;
+        padding: 1px 3px;
+        border: 1px solid #d5d5d5;
+        border-radius: 3px;
+        background: #fff;
+}
+.kbl3-colsort__chip b {
+        min-width: 14px;
+        text-align: center;
+        font-size: 11px;
+        color: #50575e;
+}
+.kbl3-colsort__btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 20px;
+        height: 20px;
+        padding: 0;
+        border: 0;
+        border-radius: 2px;
+        background: transparent;
+        color: #B39A74;
+        font-size: 14px;
+        line-height: 1;
+        cursor: pointer;
+}
+.kbl3-colsort__btn:hover:not(:disabled) {
+        background: rgba(179, 154, 116, 0.15);
+}
+.kbl3-colsort__btn:disabled {
+        color: #c3c3c3;
+        cursor: default;
+}
+
+/* ---------------------------------------------------------------
+ * §23 Error-boundary placeholder (register.js safeEdit) + GT notice
+ * ------------------------------------------------------------- */
+.kbl3-edit-error {
+        padding: 18px 20px;
+        border: 1px dashed #cf6699;
+        border-radius: 4px;
+        background: #fff0f3;
+        color: #8a2424;
+        font-size: 13px;
+        line-height: 1.5;
+}
+.kbl3-edit-error p {
+        margin: 0;
+}
+.kbl3-gt-notice {
+        margin: 10px 0 12px !important;
+}
+.kbl3-gt-notice .components-notice__content {
+        font-size: 12px;
+        line-height: 1.5;
+}
+
+/* GTranslate-managed language list (read-only mirror of the plugin settings). */
+.kbl3-gt-list {
+        border: 1px solid #e2ddd4;
+        border-radius: 6px;
+        background: #fbfaf7;
+        padding: 4px 10px;
+        margin: 4px 0 10px;
+}
+.kbl3-gt-row {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 7px 2px;
+        border-bottom: 1px dashed #ece7de;
+        font-size: 12.5px;
+}
+.kbl3-gt-row:last-of-type {
+        border-bottom: 0;
+}
+.kbl3-gt-row__label {
+        flex: 1 1 auto;
+        min-width: 0;
+        color: #1d1b17;
+}
+.kbl3-gt-row__code {
+        flex: 0 0 auto;
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        font-size: 11px;
+        color: #8a8172;
+        background: #f1ede6;
+        border-radius: 4px;
+        padding: 1px 6px;
+}
+.kbl3-gt-row__badge {
+        flex: 0 0 auto;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #4c7a5c;
+        border: 1px solid #bcd4c4;
+        border-radius: 999px;
+        padding: 1px 8px;
+}
+.kbl3-gt-actions {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin: 2px 0 6px;
+}
+.kbl3-gt-settings-link {
+        font-size: 12px;
+        color: #b08d4f;
+        text-decoration: none;
+}
+.kbl3-gt-settings-link:hover,
+.kbl3-gt-settings-link:focus {
+        color: #8f6f37;
+        text-decoration: underline;
+}
+
+/* ---- Global colors: manage link at the bottom of every color panel ---- */
+.kbl3-gc-link {
+        display: block;
+        padding: 2px 16px 14px;
+        margin-top: -2px;
+        font-size: 11px;
+        letter-spacing: 0.02em;
+        color: #b08d4f;
+        text-decoration: none;
+}
+.kbl3-gc-link:hover,
+.kbl3-gc-link:focus {
+        color: #8f6f37;
+        text-decoration: underline;
+}
+
+/* ---- Language switcher dropdown: keep the panel open on the canvas ----
+ * The front-end hides .kbl3-lang__menu until .is-open / :focus-within, but
+ * the canvas has no front.js runtime — pin the panel open so every language
+ * stays visible while editing (the toggle renders as the live button). */
+.editor-styles-wrapper .kbl3-lang__menu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        margin-top: 8px;
+        max-height: none;
+        overflow: visible;
+}
+.editor-styles-wrapper .kbl3-lang--dropdown {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+}
+.editor-styles-wrapper .kbl3-lang--dropdown.kbl3-lang--right {
+        align-items: flex-end;
+}
+.editor-styles-wrapper .kbl3-lang--dropdown.kbl3-lang--center {
+        align-items: center;
+}
+.editor-styles-wrapper .kbl3-lang__toggle {
+        cursor: default;
+}

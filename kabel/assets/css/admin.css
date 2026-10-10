@@ -1,0 +1,18 @@
+/*
+ * Kabel theme — admin styles for the field engine.
+ */
+
+.kabel-fields { display: grid; gap: 20px; }
+.kabel-field__label { display: block; margin-bottom: 6px; }
+.kabel-field__desc { margin: 4px 0 8px; color: #66707a; font-size: 12px; }
+
+.kabel-repeater__rows { display: grid; gap: 6px; margin-bottom: 8px; }
+.kabel-repeater__row { display: flex; gap: 6px; align-items: center; }
+.kabel-repeater__row input[type="text"] { flex: 1; min-width: 0; }
+.kabel-repeater__remove { color: #b32d2e; font-size: 16px; line-height: 1; cursor: pointer; border: 0; background: none; padding: 4px 6px; }
+
+.kabel-media-multi__thumbs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; }
+.kabel-media-multi__thumb { width: 80px; height: 80px; object-fit: cover; border: 1px solid #dcdcde; border-radius: 6px; }
+
+.kabel-post-multi { display: grid; gap: 4px; margin: 0; max-height: 260px; overflow-y: auto; border: 1px solid #dcdcde; border-radius: 6px; padding: 10px 12px; }
+.kabel-post-multi li { margin: 0; }

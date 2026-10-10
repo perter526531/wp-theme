@@ -1,0 +1,193 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 2,
+    "name": "kbl/pricing",
+    "title": "Pricing (Kabel)",
+    "category": "kabel",
+    "keywords": [
+        "kabel",
+        "pricing",
+        "price",
+        "plan",
+        "价格",
+        "套餐",
+        "定价",
+        "价格",
+        "套餐"
+    ],
+    "description": "Package price card with a big number, check-marked features and a CTA button.",
+    "supports": {
+        "anchor": true,
+        "customClassName": true
+    },
+    "attributes": {
+        "anchor": {
+            "type": "string",
+            "source": "attribute",
+            "attribute": "id",
+            "selector": "*"
+        },
+        "planName": {
+            "type": "string",
+            "source": "html",
+            "selector": ".kbl3-price__plan",
+            "default": "Signature Package"
+        },
+        "price": {
+            "type": "string",
+            "source": "html",
+            "selector": ".kbl3-price__num",
+            "default": "38"
+        },
+        "period": {
+            "type": "string",
+            "source": "html",
+            "selector": ".kbl3-price__period",
+            "default": "/ 5L"
+        },
+        "features": {
+            "type": "array",
+            "default": [
+                "Color consultation included",
+                "Two-coat premium application",
+                "5-year finish warranty",
+                "Free touch-up kit"
+            ]
+        },
+        "btnLabel": {
+            "type": "string",
+            "source": "html",
+            "selector": "a",
+            "default": "Request this package"
+        },
+        "btnURL": {
+            "type": "string"
+        },
+        "featured": {
+            "type": "boolean"
+        },
+        "footnote": {
+            "type": "string",
+            "source": "html",
+            "selector": ".kbl3-price__foot"
+        },
+        "bgColor": {
+            "type": "string"
+        },
+        "radius": {
+            "type": "number"
+        },
+        "shadow": {
+            "type": "string"
+        },
+        "shadowX": {
+            "type": "number"
+        },
+        "shadowY": {
+            "type": "number"
+        },
+        "shadowB": {
+            "type": "number"
+        },
+        "shadowS": {
+            "type": "number"
+        },
+        "shadowColor": {
+            "type": "string"
+        },
+        "fontSize": {
+            "type": "number"
+        },
+        "fontSizeT": {
+            "type": "number"
+        },
+        "fontSizeM": {
+            "type": "number"
+        },
+        "anim": {
+            "type": "string"
+        },
+        "animDelay": {
+            "type": "number"
+        },
+        "hideD": {
+            "type": "boolean"
+        },
+        "hideT": {
+            "type": "boolean"
+        },
+        "hideM": {
+            "type": "boolean"
+        },
+        "mt": {
+            "type": "number"
+        },
+        "mb": {
+            "type": "number"
+        },
+        "mr": {
+            "type": "number"
+        },
+        "ml": {
+            "type": "number"
+        },
+        "mtM": {
+            "type": "number"
+        },
+        "mbM": {
+            "type": "number"
+        },
+        "pt": {
+            "type": "number"
+        },
+        "pr": {
+            "type": "number"
+        },
+        "pb": {
+            "type": "number"
+        },
+        "pl": {
+            "type": "number"
+        },
+        "customClass": {
+            "type": "string"
+        },
+        "zIndex": {
+            "type": "number"
+        },
+        "overflow": {
+            "type": "string"
+        },
+        "rot": {
+            "type": "number"
+        },
+        "scale": {
+            "type": "number"
+        },
+        "tx": {
+            "type": "number"
+        },
+        "ty": {
+            "type": "number"
+        },
+        "padM": {
+            "type": "number"
+        },
+        "mtT": {
+            "type": "number"
+        },
+        "mbT": {
+            "type": "number"
+        },
+        "uid": {
+            "type": "string"
+        },
+        "cssText": {
+            "type": "string"
+        }
+    },
+    "textdomain": "kabel-blocks",
+    "editorScript": "kabel-blocks-v3",
+    "style": "kabel-blocks-v3",
+    "editorStyle": "kabel-blocks-v3-editor"
+}
