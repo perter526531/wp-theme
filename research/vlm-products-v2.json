@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "Based on the provided screenshot, there is **no product grid section** visible. The image displays a news/blog section with three article cards, followed by an \"OEM / ODM Project\" banner and a footer. Therefore, it is impossible to assess whether product card text or category labels are truncated.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790645119,
+  "id": "2026092909251512a8b83759fe4985",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026092909251512a8b83759fe4985",
+  "usage": {
+    "completion_tokens": 62,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2763,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2825
+  }
+}

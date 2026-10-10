@@ -1,0 +1,1970 @@
+# Copyright (C) 2026 Dazhen Tech
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Dazhen 0.1.0\n"
+"Report-Msgid-Bugs-To: https://dazhenglobal.com/\n"
+"POT-Creation-Date: 2026-09-29 08:30+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Dazhen theme build\n"
+"X-Domain: dazhen\n"
+
+#: inc/setup.php
+msgid "Primary Navigation (header)"
+msgstr ""
+
+#: inc/setup.php
+msgid "Footer — Product Series"
+msgstr ""
+
+#: inc/setup.php
+msgid "Footer — Solutions & Company"
+msgstr ""
+
+#: inc/post-types.php
+msgid "Products"
+msgstr ""
+
+#: inc/post-types.php
+msgid "Product Series"
+msgstr ""
+
+#: inc/post-types.php
+msgid "Solutions"
+msgstr ""
+
+#: inc/post-types.php
+#: page-templates/solutions-overview.php
+msgid "Success Cases"
+msgstr ""
+
+#: inc/post-types.php
+msgid "Inquiries"
+msgstr ""
+
+#: inc/inquiry.php
+msgid "Company name"
+msgstr ""
+
+#: inc/inquiry.php
+msgid "Contact person"
+msgstr ""
+
+#: inc/inquiry.php
+msgid "Phone / WhatsApp"
+msgstr ""
+
+#: inc/inquiry.php
+msgid "Email"
+msgstr ""
+
+#: inc/inquiry.php
+msgid "Country / Region"
+msgstr ""
+
+#: inc/inquiry.php
+msgid "Product of interest"
+msgstr ""
+
+#: inc/inquiry.php
+msgid "Message"
+msgstr ""
+
+#: inc/inquiry.php
+msgid "Send Inquiry"
+msgstr ""
+
+#: inc/inquiry.php
+msgid "Thank you — inquiry received."
+msgstr ""
+
+#: inc/inquiry.php
+msgid "Our sales team will reply within one business day. Meanwhile, feel free to keep browsing our products."
+msgstr ""
+
+#: inc/inquiry.php
+msgid "Too many requests. Please wait a minute and try again."
+msgstr ""
+
+#: inc/inquiry.php
+msgid "New website inquiry"
+msgstr ""
+
+#: inc/inquiry.php
+msgid "View in admin"
+msgstr ""
+
+#: inc/inquiry.php
+msgid "Tip: use \"Reply\" in your mail client — it goes straight to the customer."
+msgstr ""
+
+#: inc/inquiry-admin.php
+msgid "New"
+msgstr ""
+
+#: inc/inquiry-admin.php
+msgid "Following up"
+msgstr ""
+
+#: inc/inquiry-admin.php
+msgid "Won"
+msgstr ""
+
+#: inc/inquiry-admin.php
+msgid "Export CSV"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Contact & Inquiry Emails"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Inquiry forwarding emails"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Comma-separated. Every inquiry is emailed here (plus the site admin). Reply-To is set to the customer."
+msgstr ""
+
+#: templates/header.php
+msgid "Skip to content"
+msgstr ""
+
+#: templates/header.php
+msgid "Menu"
+msgstr ""
+
+#: templates/footer.php
+msgid "Compliance"
+msgstr ""
+
+#: templates/footer.php
+msgid "© %s Dazhen Technology. All rights reserved."
+msgstr ""
+
+#: templates/front-page.php
+msgid "Instant hot. Instant cold. Engineered in 3 seconds."
+msgstr ""
+
+#: templates/front-page.php
+msgid "Years of Technology"
+msgstr ""
+
+#: templates/front-page.php
+msgid "Patented Technologies"
+msgstr ""
+
+#: templates/front-page.php
+msgid "Core R&D Engineers"
+msgstr ""
+
+#: templates/front-page.php
+msgid "Units Minimum Order"
+msgstr ""
+
+#: templates/front-page.php
+#: inc/patterns.php
+msgid "Ready to spec your next water appliance?"
+msgstr ""
+
+#: templates/404.php
+msgid "This page went for a water break."
+msgstr ""
+
+#: template-parts/selector-wizard.php
+msgid "Scenario"
+msgstr ""
+
+#: template-parts/selector-wizard.php
+msgid "Installation"
+msgstr ""
+
+#: template-parts/selector-wizard.php
+msgid "Water"
+msgstr ""
+
+#: template-parts/selector-wizard.php
+msgid "Where will it serve?"
+msgstr ""
+
+#: template-parts/selector-wizard.php
+msgid "Home & Kitchen"
+msgstr ""
+
+#: template-parts/selector-wizard.php
+msgid "Family drinking and cooking"
+msgstr ""
+
+#: template-parts/selector-wizard.php
+msgid "Office & Commercial"
+msgstr ""
+
+#: template-parts/selector-wizard.php
+msgid "Teams, pantries, lounges"
+msgstr ""
+
+#: template-parts/selector-wizard.php
+msgid "School & Medical"
+msgstr ""
+
+#: template-parts/selector-wizard.php
+msgid "Safe-temperature priorities"
+msgstr ""
+
+#: template-parts/selector-wizard.php
+msgid "Hotel & Engineering"
+msgstr ""
+
+#: template-parts/selector-wizard.php
+msgid "Renovation and new builds"
+msgstr ""
+
+#: template-parts/selector-wizard.php
+msgid "How should it install?"
+msgstr ""
+
+#: template-parts/selector-wizard.php
+msgid "Countertop"
+msgstr ""
+
+#: template-parts/selector-wizard.php
+msgid "Sits on the counter"
+msgstr ""
+
+#: template-parts/selector-wizard.php
+msgid "Wall-mounted"
+msgstr ""
+
+#: template-parts/selector-wizard.php
+msgid "Fixed to the wall"
+msgstr ""
+
+#: template-parts/selector-wizard.php
+msgid "Built-in"
+msgstr ""
+
+#: template-parts/selector-wizard.php
+msgid "Under-sink or embedded"
+msgstr ""
+
+#: template-parts/selector-wizard.php
+msgid "Faucet-mount"
+msgstr ""
+
+#: template-parts/selector-wizard.php
+msgid "Replaces the tap"
+msgstr ""
+
+#: template-parts/selector-wizard.php
+msgid "What water do you need?"
+msgstr ""
+
+#: template-parts/selector-wizard.php
+msgid "Instant hot"
+msgstr ""
+
+#: template-parts/selector-wizard.php
+msgid "3-second 95°C"
+msgstr ""
+
+#: template-parts/selector-wizard.php
+msgid "Ice-cold"
+msgstr ""
+
+#: template-parts/selector-wizard.php
+msgid "5–8°C chilled"
+msgstr ""
+
+#: template-parts/selector-wizard.php
+msgid "Hot + Cold"
+msgstr ""
+
+#: template-parts/selector-wizard.php
+msgid "One machine, both ends"
+msgstr ""
+
+#: template-parts/selector-wizard.php
+msgid "Sparkling"
+msgstr ""
+
+#: template-parts/selector-wizard.php
+msgid "Carbonated water platform"
+msgstr ""
+
+#: template-parts/selector-wizard.php
+msgid "Solution Finder"
+msgstr ""
+
+#: template-parts/selector-wizard.php
+msgid "Three questions to your model"
+msgstr ""
+
+#: template-parts/selector-wizard.php
+msgid "Answer scenario, installation and water-type questions — we match the catalog for you, or build it OEM."
+msgstr ""
+
+#: template-parts/selector-wizard.php
+msgid "← Back"
+msgstr ""
+
+#: template-parts/selector-wizard.php
+msgid "Your matches"
+msgstr ""
+
+#: template-parts/selector-wizard.php
+msgid "Don’t see exactly it?"
+msgstr ""
+
+#: template-parts/selector-wizard.php
+msgid "Hydrogen-rich, boil-and-cool and sparkling platforms are ready for OEM/ODM — from 100 units."
+msgstr ""
+
+#: template-parts/selector-wizard.php
+msgid "Start over"
+msgstr ""
+
+#: archive-product.php
+msgid "Not sure which model? Try the 3-question Solution Finder ↓"
+msgstr ""
+
+#: front-page.php
+msgid "Not sure which model? Try the 3-question Solution Finder →"
+msgstr ""
+
+#: archive-product.php
+msgid "Search models…"
+msgstr ""
+
+#: archive-product.php
+msgid "Search products"
+msgstr ""
+
+#: archive-product.php
+msgid "Search"
+msgstr ""
+
+#: template-parts/delivery-map.php
+msgid "Global Delivery"
+msgstr ""
+
+#: template-parts/delivery-map.php
+msgid "From Dayawan to five continents"
+msgstr ""
+
+#: template-parts/delivery-map.php
+msgid "OEM/ODM programs shipped to distributor, hotel and education networks across Europe, Southeast Asia, the Middle East and Oceania."
+msgstr ""
+
+#: template-parts/delivery-map.php
+msgid "Dazhen headquarters and factory: Dayawan, Huizhou, China."
+msgstr ""
+
+#: template-parts/delivery-map.php
+msgid "United Kingdom — 1,500 ice-water units delivered."
+msgstr ""
+
+#: template-parts/delivery-map.php
+msgid "Thailand — 1,800 sparkling-water units delivered."
+msgstr ""
+
+#: template-parts/delivery-map.php
+msgid "Delivery coverage also includes Frankfurt, Dubai and Sydney."
+msgstr ""
+
+#: template-parts/delivery-map.php
+msgid "UK — 1,500 ice-water units"
+msgstr ""
+
+#: template-parts/delivery-map.php
+msgid "Thailand — 1,800 sparkling units"
+msgstr ""
+
+#: template-parts/delivery-map.php
+msgid "Middle East — hotel engineering"
+msgstr ""
+
+#: template-parts/delivery-map.php
+msgid "Oceania — retail programs"
+msgstr ""
+
+#: page-templates/solutions-overview.php
+msgid "Solutions & Success Cases"
+msgstr ""
+
+#: page-templates/solutions-overview.php
+msgid "Scenario-matched lineups and the deployments that proved them — from family kitchens to hotel engineering."
+msgstr ""
+
+#: page-templates/solutions-overview.php
+msgid "By Scenario"
+msgstr ""
+
+#: page-templates/solutions-overview.php
+msgid "Four scenarios, one engineering platform"
+msgstr ""
+
+#: page-templates/solutions-overview.php
+msgid "Scenario landing pages are being prepared — the delivery map and cases below are already live."
+msgstr ""
+
+#: page-templates/solutions-overview.php
+msgid "Proven in real deployments"
+msgstr ""
+
+#: page-templates/solutions-overview.php
+msgid "All regions"
+msgstr ""
+
+#: page-templates/solutions-overview.php
+msgid "Browse all cases"
+msgstr ""
+
+#: page-templates/services.php
+msgid "Your brand. Our engineering."
+msgstr ""
+
+#: page-templates/services.php
+msgid "A one-stop OEM/ODM partner for smart water appliances — from the first requirement talk to container loading, one team owns your program."
+msgstr ""
+
+#: page-templates/services.php
+msgid "OEM / ODM Services"
+msgstr ""
+
+#: page-templates/services.php
+msgid "100 units"
+msgstr ""
+
+#: page-templates/services.php
+msgid "MOQ"
+msgstr ""
+
+#: page-templates/services.php
+msgid "4–6 weeks"
+msgstr ""
+
+#: page-templates/services.php
+msgid "Lead time"
+msgstr ""
+
+#: page-templates/services.php
+msgid "1 year"
+msgstr ""
+
+#: page-templates/services.php
+msgid "Warranty"
+msgstr ""
+
+#: page-templates/services.php
+msgid "Global"
+msgstr ""
+
+#: page-templates/services.php
+msgid "After-sales"
+msgstr ""
+
+#: page-templates/services.php
+msgid "What we do"
+msgstr ""
+
+#: page-templates/services.php
+msgid "Manufacturing for brands that ship worldwide"
+msgstr ""
+
+#: page-templates/services.php
+msgid "Dazhen designs and manufactures smart water appliances in Dayawan, Huizhou — and builds them under other people’s brands. Retail chains, distributors, hotel groups and e-commerce brands come to us for one-stop OEM/ODM production: household instant-heat taps for family kitchens, high-duty systems for offices, safe-temperature units for education and medical facilities, and wall-mounted or built-in units for hotel and engineering projects."
+msgstr ""
+
+#: page-templates/services.php
+msgid "One team covers the whole program — requirement analysis, industrial design, spec engineering, sampling and testing, ISO 9001 production, export packaging and after-delivery support. You bring the brand and the market; we bring the platforms, the factory and the engineers."
+msgstr ""
+
+#: page-templates/services.php
+msgid "Why Dazhen"
+msgstr ""
+
+#: page-templates/services.php
+msgid "Four reasons brands choose Dazhen"
+msgstr ""
+
+#: page-templates/services.php
+msgid "Full customization"
+msgstr ""
+
+#: page-templates/services.php
+msgid "Appearance, parameters and packaging tailored to your brand — built on proven instant-heat, cooling and filtration platforms."
+msgstr ""
+
+#: page-templates/services.php
+msgid "Faster to market"
+msgstr ""
+
+#: page-templates/services.php
+msgid "Proven platforms and an in-house R&D team keep development tight — typically 4–6 weeks from spec freeze to shipment."
+msgstr ""
+
+#: page-templates/services.php
+msgid "Global compliance"
+msgstr ""
+
+#: page-templates/services.php
+msgid "ISO 9001 and BSCI factories with food-grade materials; CE/CB and market-specific schemes are handled per program."
+msgstr ""
+
+#: page-templates/services.php
+msgid "Experienced team"
+msgstr ""
+
+#: page-templates/services.php
+msgid "10+ years of technology accumulation, 30+ patents and 20+ core R&D engineers behind every program."
+msgstr ""
+
+#: page-templates/services.php
+msgid "FAQ"
+msgstr ""
+
+#: page-templates/services.php
+msgid "Frequently asked"
+msgstr ""
+
+#: page-templates/services.php
+msgid "OEM & ODM"
+msgstr ""
+
+#: page-templates/services.php
+msgid "Product"
+msgstr ""
+
+#: page-templates/services.php
+msgid "Payment & Logistics"
+msgstr ""
+
+#: page-templates/services.php
+msgid "What is the minimum order quantity?"
+msgstr ""
+
+#: page-templates/services.php
+msgid "Most series start at 100 units for OEM customization; standard models can be trialed in smaller quantities."
+msgstr ""
+
+#: page-templates/services.php
+msgid "How long does customization take?"
+msgstr ""
+
+#: page-templates/services.php
+msgid "Typically 4–6 weeks from spec confirmation to shipment, depending on certification scope."
+msgstr ""
+
+#: page-templates/services.php
+msgid "Can you develop a fully custom product, or only rebrand existing models?"
+msgstr ""
+
+#: page-templates/services.php
+msgid "Both. Most programs start from a proven platform — instant-heat, ice-water, sparkling or filtration — and customize appearance, parameters and packaging; ground-up ODM development is available with our in-house industrial design team."
+msgstr ""
+
+#: page-templates/services.php
+msgid "Which certifications do you support?"
+msgstr ""
+
+#: page-templates/services.php
+msgid "ISO 9001 and BSCI factories, food-grade materials; CE/CB and market-specific schemes are handled per program."
+msgstr ""
+
+#: page-templates/services.php
+msgid "How do we evaluate samples before committing to production?"
+msgstr ""
+
+#: page-templates/services.php
+msgid "Sample units ship with lab reports covering heating performance, flow rates and safety tests. For qualified programs, pilot-run units can be arranged so your team can validate the product in-market before mass production."
+msgstr ""
+
+#: page-templates/services.php
+msgid "What does the warranty cover?"
+msgstr ""
+
+#: page-templates/services.php
+msgid "Every OEM program includes a one-year warranty from shipment. Claims are handled with replacement parts or units, coordinated through your account engineer."
+msgstr ""
+
+#: page-templates/services.php
+msgid "Are spare parts available after delivery?"
+msgstr ""
+
+#: page-templates/services.php
+msgid "Yes. Serviceable module sets and key spare parts are listed at spec confirmation, so your service team knows exactly what to stock for after-sales support."
+msgstr ""
+
+#: page-templates/services.php
+msgid "Which payment terms do you accept?"
+msgstr ""
+
+#: page-templates/services.php
+msgid "Common terms are T/T and L/C at sight; the exact deposit-and-balance split is agreed per program before production starts."
+msgstr ""
+
+#: page-templates/services.php
+msgid "Do you ship by sea or by air?"
+msgstr ""
+
+#: page-templates/services.php
+msgid "Both. Sea freight in export cartons is standard for full programs; air freight is available for samples and urgent pilot runs. Export documents are handled by our team."
+msgstr ""
+
+#: page-templates/services.php
+msgid "Start your OEM project"
+msgstr ""
+
+#: page-templates/services.php
+msgid "Tell us about your market, volumes and target specs — a sales engineer replies within one business day."
+msgstr ""
+
+#: page-templates/services.php
+msgid "OEM / ODM program"
+msgstr ""
+
+#: page-templates/services.php
+msgid "I’d like to start an OEM project. My requirements are:"
+msgstr ""
+
+#: template-parts/oem-journey.php
+msgid "OEM Journey"
+msgstr ""
+
+#: template-parts/oem-journey.php
+msgid "How an OEM program runs"
+msgstr ""
+
+#: template-parts/oem-journey.php
+msgid "From first message to container loading, one team owns your program — typically 4–6 weeks from spec freeze to shipment."
+msgstr ""
+
+#: template-parts/oem-journey.php
+msgid "Requirement talk"
+msgstr ""
+
+#: template-parts/oem-journey.php
+msgid "Week 0"
+msgstr ""
+
+#: template-parts/oem-journey.php
+msgid "Every program starts with a focused conversation: your market, expected volume, target price and the certifications you need. From that brief we recommend the platform — instant-heat, ice-water, sparkling or filtration — that fits your program best."
+msgstr ""
+
+#: template-parts/oem-journey.php
+msgid "Requirement brief"
+msgstr ""
+
+#: template-parts/oem-journey.php
+msgid "Platform shortlist"
+msgstr ""
+
+#: template-parts/oem-journey.php
+msgid "Project timeline"
+msgstr ""
+
+#: template-parts/oem-journey.php
+msgid "Concept development"
+msgstr ""
+
+#: template-parts/oem-journey.php
+msgid "Week 1–2"
+msgstr ""
+
+#: template-parts/oem-journey.php
+msgid "Our industrial designers translate the brief into appearance concepts and a complete technical proposal. You review renders, functions and costs before any tooling is committed."
+msgstr ""
+
+#: template-parts/oem-journey.php
+msgid "Concept renders"
+msgstr ""
+
+#: template-parts/oem-journey.php
+msgid "Technical proposal"
+msgstr ""
+
+#: template-parts/oem-journey.php
+msgid "Cost breakdown"
+msgstr ""
+
+#: template-parts/oem-journey.php
+msgid "Spec confirmation"
+msgstr ""
+
+#: template-parts/oem-journey.php
+msgid "Week 2"
+msgstr ""
+
+#: template-parts/oem-journey.php
+msgid "Together we lock every parameter — heating power, dispensing modes, materials, surface finish and packaging layout. The frozen spec sheet becomes the single reference for sampling and production."
+msgstr ""
+
+#: template-parts/oem-journey.php
+msgid "Spec sheet"
+msgstr ""
+
+#: template-parts/oem-journey.php
+msgid "Material list"
+msgstr ""
+
+#: template-parts/oem-journey.php
+msgid "Packaging die-line"
+msgstr ""
+
+#: template-parts/oem-journey.php
+msgid "Sampling & testing"
+msgstr ""
+
+#: template-parts/oem-journey.php
+msgid "Week 3–4"
+msgstr ""
+
+#: template-parts/oem-journey.php
+msgid "Prototype units are built and run through lab testing — heating curves, flow rates, safety and endurance. Samples ship with the reports so your team can validate them in-market."
+msgstr ""
+
+#: template-parts/oem-journey.php
+msgid "Prototype"
+msgstr ""
+
+#: template-parts/oem-journey.php
+msgid "Lab report"
+msgstr ""
+
+#: template-parts/oem-journey.php
+msgid "Test data"
+msgstr ""
+
+#: template-parts/oem-journey.php
+msgid "Production & QC"
+msgstr ""
+
+#: template-parts/oem-journey.php
+msgid "Week 4–5"
+msgstr ""
+
+#: template-parts/oem-journey.php
+msgid "Your program runs on an ISO 9001 certified line with in-line inspection at key stations. Batch traceability is maintained from component intake to final assembly."
+msgstr ""
+
+#: template-parts/oem-journey.php
+msgid "QC report"
+msgstr ""
+
+#: template-parts/oem-journey.php
+msgid "Inspection records"
+msgstr ""
+
+#: template-parts/oem-journey.php
+msgid "Production photos"
+msgstr ""
+
+#: template-parts/oem-journey.php
+msgid "Packaging & shipping"
+msgstr ""
+
+#: template-parts/oem-journey.php
+msgid "Week 5–6"
+msgstr ""
+
+#: template-parts/oem-journey.php
+msgid "Retail-ready or bulk, units are packed into export cartons and the container loading plan is documented with photos. Export documents are handled by our team."
+msgstr ""
+
+#: template-parts/oem-journey.php
+msgid "Loading plan"
+msgstr ""
+
+#: template-parts/oem-journey.php
+msgid "Container photos"
+msgstr ""
+
+#: template-parts/oem-journey.php
+msgid "Export documents"
+msgstr ""
+
+#: template-parts/oem-journey.php
+msgid "After-delivery support"
+msgstr ""
+
+#: template-parts/oem-journey.php
+msgid "Ongoing"
+msgstr ""
+
+#: template-parts/oem-journey.php
+msgid "A one-year warranty covers the program, with spare parts and updates available throughout the cycle. Field feedback feeds directly into the next batch iteration."
+msgstr ""
+
+#: template-parts/oem-journey.php
+msgid "Warranty coverage"
+msgstr ""
+
+#: template-parts/oem-journey.php
+msgid "Spare parts"
+msgstr ""
+
+#: template-parts/oem-journey.php
+msgid "Next-batch iteration"
+msgstr ""
+
+#: template-parts/oem-journey.php
+msgid "What you receive"
+msgstr ""
+
+#: template-parts/oem-journey.php
+msgid "OEM program steps"
+msgstr ""
+
+#: template-parts/oem-journey.php
+msgid "The OEM program runs in %s steps: requirement talk, concept development, spec confirmation, sampling and testing, production and QC, packaging and shipping, after-delivery support."
+msgstr ""
+
+#: template-parts/oem-journey.php
+msgid "Step %1$s · %2$s"
+msgstr ""
+
+#: inc/customizer.php
+#: inc/template-tags.php
+#: inc/patterns.php
+#: template-parts/cta-inline.php
+msgid "Get a Quote"
+msgstr ""
+
+#: inc/patterns.php
+msgid "Call to action — Get a Quote"
+msgstr ""
+
+#: inc/patterns.php
+msgid "Tell us your market, volume and target price — our engineers reply within one business day."
+msgstr ""
+
+#: inc/customizer.php
+#: page-templates/contact.php
+msgid "Time zone: GMT+8 · China Standard Time"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Working hours / time zone (Contact page promise line)"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Shown as a bullet next to the Contact inquiry form, e.g. “Time zone: GMT+8 · China Standard Time”."
+msgstr ""
+
+#: page-templates/about.php
+msgid "About Dazhen"
+msgstr ""
+
+#: page-templates/about.php
+msgid "Making water better since 2012."
+msgstr ""
+
+#: page-templates/about.php
+msgid "From a three-direction research team in Dayawan to a full OEM/ODM platform — this is the engineering behind the water your brand pours."
+msgstr ""
+
+#: page-templates/about.php
+msgid "Who we are"
+msgstr ""
+
+#: page-templates/about.php
+msgid "Quiet, serious engineering since 2012"
+msgstr ""
+
+#: page-templates/about.php
+msgid "Dazhen designs and manufactures smart water appliances in Dayawan, Huizhou. What began as a three-direction research team in 2012 is today a full OEM/ODM platform: nano rare-earth thick-film heating, dual-algorithm control, and integrated hot-cold systems — shipped to brands across five continents."
+msgstr ""
+
+#: page-templates/about.php
+msgid "Today the Dayawan base runs as a one-stop OEM/ODM partner for global brands — household faucets, built-in stations, engineering systems and specialty units, developed, certified and shipped by one team. Wherever your market sits on the map, the appliances pouring water there can be built here."
+msgstr ""
+
+#: page-templates/about.php
+msgid "The current platform lineup — faucets, built-in stations and specialty units."
+msgstr ""
+
+#: page-templates/about.php
+msgid "Family lineup photo pending — set it as this page’s featured image."
+msgstr ""
+
+#: page-templates/about.php
+msgid "Years of technology"
+msgstr ""
+
+#: page-templates/about.php
+msgid "Patented technologies"
+msgstr ""
+
+#: page-templates/about.php
+msgid "Core R&D engineers"
+msgstr ""
+
+#: page-templates/about.php
+msgid "Application scenarios"
+msgstr ""
+
+#: page-templates/about.php
+msgid "Milestones"
+msgstr ""
+
+#: page-templates/about.php
+msgid "Thirteen years, five turning points"
+msgstr ""
+
+#: page-templates/about.php
+msgid "The short version of a longer story — research directions first, platforms second, the world third."
+msgstr ""
+
+#: page-templates/about.php
+msgid "Company milestones"
+msgstr ""
+
+#: page-templates/about.php
+msgid "Now"
+msgstr ""
+
+#: page-templates/about.php
+msgid "R&D center established with three core research directions."
+msgstr ""
+
+#: page-templates/about.php
+msgid "Industry-first nano rare-earth thick-film heating platform."
+msgstr ""
+
+#: page-templates/about.php
+msgid "Global strategy launched — certified volumes begin reaching overseas markets."
+msgstr ""
+
+#: page-templates/about.php
+msgid "Instant heating + refrigeration integration breakthrough."
+msgstr ""
+
+#: page-templates/about.php
+msgid "Full product ecosystem and global market layout."
+msgstr ""
+
+#: page-templates/about.php
+msgid "R&D and core technology"
+msgstr ""
+
+#: page-templates/about.php
+msgid "Four platforms, engineered in-house"
+msgstr ""
+
+#: page-templates/about.php
+msgid "30+ patents and 20+ core R&D engineers keep these platforms moving — and every one of them is ready to carry your brand."
+msgstr ""
+
+#: page-templates/about.php
+msgid "Thick-film heating"
+msgstr ""
+
+#: page-templates/about.php
+msgid "A nano rare-earth thick-film element heats water as it flows — dispensing temperature in about three seconds, then holds it steady. No stored tank, no re-boiling."
+msgstr ""
+
+#: page-templates/about.php
+msgid "Dual-algorithm control"
+msgstr ""
+
+#: page-templates/about.php
+msgid "Two control algorithms coordinate temperature and flow in real time, keeping output stable across seasons, voltages and supply pressures."
+msgstr ""
+
+#: page-templates/about.php
+msgid "Integrated hot & cold"
+msgstr ""
+
+#: page-templates/about.php
+msgid "Instant heating and refrigeration combined in one system — an integration Dazhen pioneered in 2021 for built-in and under-sink formats."
+msgstr ""
+
+#: page-templates/about.php
+msgid "Water platforms"
+msgstr ""
+
+#: page-templates/about.php
+msgid "Hydrogen-rich, boil-and-cool and sparkling-water platforms — differentiated SKUs your market can grow into, ready for OEM programs."
+msgstr ""
+
+#: page-templates/about.php
+msgid "Shipping today on these platforms"
+msgstr ""
+
+#: page-templates/about.php
+msgid "Thick-film platform"
+msgstr ""
+
+#: page-templates/about.php
+msgid "Hot-cold integration"
+msgstr ""
+
+#: page-templates/about.php
+msgid "Certifications"
+msgstr ""
+
+#: page-templates/about.php
+msgid "Compliance you can forward to your buyers"
+msgstr ""
+
+#: page-templates/about.php
+msgid "The paperwork behind the promise — audited factories, food-safe materials and market-specific product safety schemes."
+msgstr ""
+
+#: page-templates/about.php
+#: footer.php
+msgid "ISO 9001"
+msgstr ""
+
+#: page-templates/about.php
+msgid "Quality management system covering the full production line."
+msgstr ""
+
+#: page-templates/about.php
+#: footer.php
+msgid "BSCI"
+msgstr ""
+
+#: page-templates/about.php
+msgid "Social compliance, audited for international supply chains."
+msgstr ""
+
+#: page-templates/about.php
+#: footer.php
+msgid "Food-Grade Materials"
+msgstr ""
+
+#: page-templates/about.php
+msgid "Water-contact parts meet food-grade material standards."
+msgstr ""
+
+#: page-templates/about.php
+msgid "CE · CB"
+msgstr ""
+
+#: page-templates/about.php
+msgid "Product safety schemes handled per program and market."
+msgstr ""
+
+#: page-templates/about.php
+msgid "Certificate scans to be provided by the client — badge graphics shown as placeholders."
+msgstr ""
+
+#: page-templates/about.php
+msgid "Factory & manufacturing"
+msgstr ""
+
+#: page-templates/about.php
+msgid "Made in Dayawan, shipped worldwide"
+msgstr ""
+
+#: page-templates/about.php
+msgid "Programs run on an ISO 9001 certified line with in-line inspection at key stations; batch traceability is maintained from component intake to final assembly. Retail-ready or bulk, units leave in export cartons with container loading documented photo by photo — from UK distributor programs to hotel projects across the Middle East."
+msgstr ""
+
+#: page-templates/about.php
+msgid "Assembly line"
+msgstr ""
+
+#: page-templates/about.php
+msgid "Production floor · photo to be provided"
+msgstr ""
+
+#: page-templates/about.php
+msgid "QC & testing area"
+msgstr ""
+
+#: page-templates/about.php
+msgid "In-line inspection · photo to be provided"
+msgstr ""
+
+#: page-templates/about.php
+msgid "Manufacturing capabilities"
+msgstr ""
+
+#: page-templates/about.php
+msgid "ISO 9001 line"
+msgstr ""
+
+#: page-templates/about.php
+msgid "In-line inspection"
+msgstr ""
+
+#: page-templates/about.php
+msgid "Batch traceability"
+msgstr ""
+
+#: page-templates/about.php
+msgid "Export packing"
+msgstr ""
+
+#: page-templates/contact.php
+msgid "Contact us"
+msgstr ""
+
+#: page-templates/contact.php
+msgid "Let’s talk about your program."
+msgstr ""
+
+#: page-templates/contact.php
+msgid "A question, a spec or a full program brief — send it over. A sales engineer replies within one business day."
+msgstr ""
+
+#: page-templates/contact.php
+msgid "Reach us"
+msgstr ""
+
+#: page-templates/contact.php
+msgid "Talk to the team"
+msgstr ""
+
+#: page-templates/contact.php
+msgid "Direct lines, no ticket queues — your message reaches a person who can answer it."
+msgstr ""
+
+#: page-templates/contact.php
+msgid "For voice calls and WhatsApp messages."
+msgstr ""
+
+#: page-templates/contact.php
+msgid "Best for specs, drawings and volume details."
+msgstr ""
+
+#: page-templates/contact.php
+msgid "Manufacturing and R&D on one site."
+msgstr ""
+
+#: page-templates/contact.php
+msgid "Factory"
+msgstr ""
+
+#: page-templates/contact.php
+msgid "Inquiry form"
+msgstr ""
+
+#: page-templates/contact.php
+msgid "Send us the details"
+msgstr ""
+
+#: page-templates/contact.php
+msgid "Whether it’s a standard model, a rebrand or full ODM development — send the details and a sales engineer will map your program to the right platform, with costs and a realistic timeline."
+msgstr ""
+
+#: page-templates/contact.php
+msgid "Reply within one business day"
+msgstr ""
+
+#: page-templates/contact.php
+msgid "Working languages: English & Chinese"
+msgstr ""
+
+#: page-templates/contact.php
+#. translators: 1: email address link, 2: phone number link
+msgid "Prefer email? Write to %1$s or message %2$s on WhatsApp."
+msgstr ""
+
+#: page-templates/contact.php
+msgid "This form is protected by a hidden honeypot field and rate limiting — invisible to real users, effective against bots."
+msgstr ""
+
+#: page-templates/contact.php
+msgid "Your data is used only to respond to this inquiry — never sold, never shared, removed on request."
+msgstr ""
+
+#: template-parts/post-card.php
+msgid "Read article →"
+msgstr ""
+
+#: template-parts/post-card.php
+msgid "%d min"
+msgstr ""
+
+#: template-parts/blog-toolbar.php
+msgid "Filter articles by category"
+msgstr ""
+
+#: template-parts/blog-toolbar.php
+msgid "All"
+msgstr ""
+
+#: index.php
+msgid "What’s new at Dazhen"
+msgstr ""
+
+#: index.php
+#: archive.php
+msgid "News & Insights"
+msgstr ""
+
+#: index.php
+#: archive.php
+msgid "Program milestones, trade-show recaps and plain-language technology notes from the Dayawan team."
+msgstr ""
+
+#: index.php
+#: archive.php
+msgid "Nothing published here yet."
+msgstr ""
+
+#: archive.php
+msgid "Insights"
+msgstr ""
+
+#: archive.php
+msgid "No articles in this category yet"
+msgstr ""
+
+#: archive.php
+msgid "New pieces for this category are in the pipeline. In the meantime, company news covers program milestones, trade-show recaps and technology notes."
+msgstr ""
+
+#: archive.php
+msgid "Back to all articles"
+msgstr ""
+
+#: single.php
+msgid "%d min read"
+msgstr ""
+
+#: single.php
+#. translators: %s: author name
+msgid "By %s"
+msgstr ""
+
+#: inc/template-tags.php
+#: single.php
+msgid "Previous"
+msgstr ""
+
+#: inc/template-tags.php
+#: single.php
+msgid "Next"
+msgstr ""
+
+#: inc/template-tags.php
+msgid "News"
+msgstr ""
+
+#: template-parts/case-toolbar.php:19 archive.php:48
+msgid "Field References"
+msgstr ""
+msgid "Filter cases by region"
+msgstr ""
+
+#: template-parts/case-toolbar.php:19 archive.php:48
+msgid "Field References"
+msgstr ""
+msgid "Reference deployments across regions — filtered by market where our water systems run today."
+msgstr ""
+#: comments.php:55
+msgid "Leave a comment"
+msgstr ""
+
+#: comments.php:58
+msgid "Post comment"
+msgstr ""
+
+#: comments.php:61
+msgid "Comment *"
+msgstr ""
+
+#: comments.php:24
+msgid "%s comment"
+msgstr ""
+
+#: front-page.php:61
+msgid "3s Instant Heat"
+msgstr ""
+
+#: front-page.php:94
+msgid "Four reasons global brands build with us"
+msgstr ""
+
+#: front-page.php:100
+msgid "Self-Developed Heating Tech"
+msgstr ""
+
+#: front-page.php:100
+msgid "Thick-film heating with dual-algorithm control: 3-second heat-up, precise constant temperature, tankless efficiency."
+msgstr ""
+
+#: front-page.php:101
+msgid "All-Scenario Lineup"
+msgstr ""
+
+#: front-page.php:101
+msgid "From home faucets to hotel engineering systems — one factory covers every drinking-water scenario."
+msgstr ""
+
+#: front-page.php:102
+msgid "OEM / ODM One-Stop"
+msgstr ""
+
+#: front-page.php:102
+msgid "Industrial design, certification and packaging handled in one continuous flow, from concept to shipment."
+msgstr ""
+
+#: front-page.php:103
+msgid "Global Compliance"
+msgstr ""
+
+#: front-page.php:103
+msgid "ISO 9001, BSCI and food-grade material standards — products ready for worldwide markets."
+msgstr ""
+
+#: front-page.php:124
+msgid "Product Center"
+msgstr ""
+
+#: front-page.php:125
+msgid "Built for every drinking-water scenario"
+msgstr ""
+
+#: front-page.php:126
+msgid "Ten series, one engineering platform — all available for OEM/ODM customization."
+msgstr ""
+
+#: front-page.php:154
+msgid "Ten years of quiet, serious engineering"
+msgstr ""
+
+#: front-page.php:155
+msgid "A research team founded in 2012, now a full manufacturing platform in Dayawan, Huizhou."
+msgstr ""
+
+#: front-page.php:161
+msgid "R&D center established — three core research directions"
+msgstr ""
+
+#: front-page.php:162
+msgid "Industry-first nano rare-earth thick-film heating"
+msgstr ""
+
+#: front-page.php:163
+msgid "Instant heating + refrigeration integration breakthrough"
+msgstr ""
+
+#: front-page.php:164
+msgid "Full product ecosystem and global layout"
+msgstr ""
+
+#: front-page.php:184
+msgid "Core Technology"
+msgstr ""
+
+#: front-page.php:185
+msgid "One platform, every water technology"
+msgstr ""
+
+#: front-page.php:191
+msgid "Instant Heating"
+msgstr ""
+
+#: front-page.php:191
+msgid "Tankless thick-film heating — 3-second heat-up and zero stored-water heat loss."
+msgstr ""
+
+#: front-page.php:192
+msgid "Hot-Cold Integration"
+msgstr ""
+
+#: front-page.php:192
+msgid "Heating and cooling unified on one platform — one machine serves tea, ice water and everything between."
+msgstr ""
+
+#: front-page.php:193
+msgid "Purification (UV + RO)"
+msgstr ""
+
+#: front-page.php:193
+msgid "UV sterilization and reverse-osmosis filtration built into the water path."
+msgstr ""
+
+#: front-page.php:194
+msgid "Specialized Platforms"
+msgstr ""
+
+#: front-page.php:194
+msgid "Hydrogen-rich, boil-and-cool and sparkling water — differentiated SKUs for premium markets."
+msgstr ""
+
+#: front-page.php:222
+msgid "Chosen by distributors, hotels, schools and brands"
+msgstr ""
+
+#: front-page.php:223
+msgid "Scenario-matched lineups, proven in real deployments across continents."
+msgstr ""
+
+#: front-page.php:229
+msgid "Household"
+msgstr ""
+
+#: front-page.php:229
+msgid "Compact instant-heat taps and countertop units for family kitchens."
+msgstr ""
+
+#: front-page.php:230
+msgid "High-duty systems for daily workplace hydration."
+msgstr ""
+
+#: front-page.php:231
+msgid "Education & Medical"
+msgstr ""
+
+#: front-page.php:231
+msgid "Safe-temperature dispensing with child-proof controls."
+msgstr ""
+
+#: front-page.php:232
+msgid "Wall-mounted and embedded units engineered for renovation projects."
+msgstr ""
+
+#: front-page.php:270
+msgid "From the factory floor and the industry"
+msgstr ""
+
+#: search.php:19
+msgid "Results for “%s”"
+msgstr ""
+
+#: single-product.php:45
+msgid "Inquire about this model"
+msgstr ""
+
+#: single-product.php:93
+msgid "Show image %d"
+msgstr ""
+
+#: inc/customizer.php:43
+msgid "Shown in the header/footer and used as inquiry notification recipients."
+msgstr ""
+
+#: inc/customizer.php:48
+msgid "Phone number"
+msgstr ""
+
+#: inc/customizer.php:54
+msgid "Public email"
+msgstr ""
+
+#: inc/customizer.php:60
+msgid "Address"
+msgstr ""
+
+#: inc/customizer.php:61
+#: page-templates/contact.php:52
+msgid "Dayawan, Huizhou City, Guangdong Province, China"
+msgstr ""
+
+#: inc/customizer.php:73
+msgid "Header button text"
+msgstr ""
+
+#: inc/customizer.php:79
+msgid "Hero eyebrow (small line above the homepage headline)"
+msgstr ""
+
+#: inc/editor.php:17
+msgid "Dazhen"
+msgstr ""
+
+#: inc/i18n-compat.php:77
+msgid "Switch language"
+msgstr ""
+
+#: inc/inquiry-admin.php:29
+msgid "Company / Person"
+msgstr ""
+
+#: inc/inquiry-admin.php:30
+msgid "Country"
+msgstr ""
+
+#: inc/inquiry-admin.php:32
+msgid "Status"
+msgstr ""
+
+#: inc/inquiry-admin.php:33
+msgid "Received"
+msgstr ""
+
+#: inc/inquiry-admin.php:118
+msgid "Follow-up"
+msgstr ""
+
+#: inc/inquiry-admin.php:145
+msgid "Reply by email"
+msgstr ""
+
+#: inc/inquiry-admin.php:149
+msgid "Submitted from:"
+msgstr ""
+
+#: inc/inquiry-admin.php:236
+msgid "You are not allowed to export inquiries."
+msgstr ""
+
+#: inc/inquiry.php:51
+msgid "Browse products"
+msgstr ""
+
+#: inc/inquiry.php:138
+msgid "Rate limited"
+msgstr ""
+
+#: inc/inquiry.php:226
+msgid "Company"
+msgstr ""
+
+#: inc/inquiry.php:257
+msgid "Source page:"
+msgstr ""
+
+#: inc/metabox-ui.php:6
+#: inc/metabox-ui.php:343
+msgid "Product Details"
+msgstr ""
+
+#: inc/metabox-ui.php:193
+msgid "+ Add row"
+msgstr ""
+
+#: inc/metabox-ui.php:214
+msgid "Remove row"
+msgstr ""
+
+#: inc/metabox-ui.php:254
+msgid "No items available yet."
+msgstr ""
+
+#: inc/metabox-ui.php:347
+msgid "Model number"
+msgstr ""
+
+#: inc/metabox-ui.php:348
+msgid "e.g. 18E-2 — shown as the card title."
+msgstr ""
+
+#: inc/metabox-ui.php:353
+msgid "Tagline"
+msgstr ""
+
+#: inc/metabox-ui.php:354
+msgid "One-line positioning statement (shown under the model)."
+msgstr ""
+
+#: inc/metabox-ui.php:359
+msgid "Corner badge"
+msgstr ""
+
+#: inc/metabox-ui.php:361
+msgid "None"
+msgstr ""
+
+#: inc/metabox-ui.php:362
+msgid "NEW"
+msgstr ""
+
+#: inc/metabox-ui.php:363
+msgid "HOT"
+msgstr ""
+
+#: inc/metabox-ui.php:369
+msgid "Selling points"
+msgstr ""
+
+#: inc/metabox-ui.php:370
+msgid "One selling point per line."
+msgstr ""
+
+#: inc/metabox-ui.php:377
+msgid "Specification table"
+msgstr ""
+
+#: inc/metabox-ui.php:378
+msgid "Rows sharing the same \"group\" merge into one section on the front end."
+msgstr ""
+
+#: inc/metabox-ui.php:380
+msgid "Group"
+msgstr ""
+
+#: inc/metabox-ui.php:381
+msgid "Parameter"
+msgstr ""
+
+#: inc/metabox-ui.php:382
+msgid "Value"
+msgstr ""
+
+#: inc/metabox-ui.php:383
+msgid "Unit"
+msgstr ""
+
+#: inc/metabox-ui.php:385
+msgid "+ Add spec row"
+msgstr ""
+
+#: inc/metabox-ui.php:390
+msgid "Gallery"
+msgstr ""
+
+#: inc/metabox-ui.php:391
+msgid "Additional images shown on the product page (featured image is set on the right)."
+msgstr ""
+
+#: inc/metabox-ui.php:396
+msgid "Case Details"
+msgstr ""
+
+#: inc/metabox-ui.php:400
+msgid "Client country"
+msgstr ""
+
+#: inc/metabox-ui.php:401
+msgid "e.g. United Kingdom"
+msgstr ""
+
+#: inc/metabox-ui.php:406
+msgid "Country flag emoji"
+msgstr ""
+
+#: inc/metabox-ui.php:407
+msgid "e.g. 🇬🇧 (optional)"
+msgstr ""
+
+#: inc/metabox-ui.php:412
+msgid "Client type"
+msgstr ""
+
+#: inc/metabox-ui.php:414
+msgid "Distributor / Dealer"
+msgstr ""
+
+#: inc/metabox-ui.php:415
+msgid "Hotel / Hospitality"
+msgstr ""
+
+#: inc/metabox-ui.php:416
+#: inc/template-tags.php:134
+msgid "Education"
+msgstr ""
+
+#: inc/metabox-ui.php:417
+#: inc/template-tags.php:135
+msgid "Medical"
+msgstr ""
+
+#: inc/metabox-ui.php:418
+#: inc/metabox-ui.php:463
+msgid "Office / Commercial"
+msgstr ""
+
+#: inc/metabox-ui.php:419
+msgid "E-commerce brand"
+msgstr ""
+
+#: inc/metabox-ui.php:425
+msgid "Order volume"
+msgstr ""
+
+#: inc/metabox-ui.php:426
+msgid "e.g. 1,500 units"
+msgstr ""
+
+#: inc/metabox-ui.php:431
+msgid "Requirement"
+msgstr ""
+
+#: inc/metabox-ui.php:437
+msgid "Challenge"
+msgstr ""
+
+#: inc/metabox-ui.php:443
+msgid "Client feedback (quote)"
+msgstr ""
+
+#: inc/metabox-ui.php:450
+msgid "Related products"
+msgstr ""
+
+#: inc/metabox-ui.php:451
+msgid "Shown as linked product cards on the case page."
+msgstr ""
+
+#: inc/metabox-ui.php:456
+msgid "Scenario Details"
+msgstr ""
+
+#: inc/metabox-ui.php:460
+msgid "Icon"
+msgstr ""
+
+#: inc/metabox-ui.php:462
+msgid "Home (Household)"
+msgstr ""
+
+#: inc/metabox-ui.php:464
+msgid "Education / Medical"
+msgstr ""
+
+#: inc/metabox-ui.php:465
+msgid "Hotel / Engineering"
+msgstr ""
+
+#: inc/metabox-ui.php:471
+msgid "Card summary"
+msgstr ""
+
+#: inc/metabox-ui.php:477
+msgid "Pain points"
+msgstr ""
+
+#: inc/metabox-ui.php:478
+msgid "One pain point per line."
+msgstr ""
+
+#: inc/metabox-ui.php:485
+msgid "Recommended products"
+msgstr ""
+
+#: inc/metabox-ui.php:486
+msgid "Shown on the scenario landing page."
+msgstr ""
+
+#: inc/nav-fallbacks.php:22
+#: inc/nav-fallbacks.php:146
+msgid "About Us"
+msgstr ""
+
+#: inc/nav-fallbacks.php:23
+msgid "Services"
+msgstr ""
+
+#: inc/nav-fallbacks.php:24
+msgid "Blog"
+msgstr ""
+
+#: inc/nav-fallbacks.php:25
+#: inc/nav-fallbacks.php:149
+msgid "Contact Us"
+msgstr ""
+
+#: inc/nav-fallbacks.php:29
+#: inc/template-tags.php:195
+msgid "Home"
+msgstr ""
+
+#: inc/nav-fallbacks.php:135
+msgid "All products"
+msgstr ""
+
+#: inc/nav-fallbacks.php:145
+msgid "Solutions & Cases"
+msgstr ""
+
+#: inc/plugin-guide.php:19
+#: inc/plugin-guide.php:20
+msgid "Dazhen Setup"
+msgstr ""
+
+#: inc/plugin-guide.php:125
+msgid "Active"
+msgstr ""
+
+#: inc/plugin-guide.php:127
+msgid "Install"
+msgstr ""
+
+#: inc/plugin-guide.php:155
+msgid "Extra designer blocks — 100% compatible next to Dazhen Blocks."
+msgstr ""
+
+#: inc/plugin-guide.php:160
+msgid "Instant machine translation (100+ languages) — the header switcher styles itself automatically."
+msgstr ""
+
+#: inc/plugin-guide.php:165
+msgid "Human-managed translations for strategic markets — the header shows the A×B language dropdown."
+msgstr ""
+
+#: inc/plugin-guide.php:170
+msgid "Deliver inquiry emails reliably (without it, most hosts block outgoing mail)."
+msgstr ""
+
+#: inc/post-types.php:26
+msgid "Add New Product"
+msgstr ""
+
+#: inc/post-types.php:27
+msgid "Edit Product"
+msgstr ""
+
+#: inc/post-types.php:45
+msgid "Series"
+msgstr ""
+
+#: inc/post-types.php:58
+msgid "Solution"
+msgstr ""
+
+#: inc/post-types.php:59
+msgid "Add New Solution"
+msgstr ""
+
+#: inc/post-types.php:60
+msgid "Edit Solution"
+msgstr ""
+
+#: inc/post-types.php:77
+msgid "Success Case"
+msgstr ""
+
+#: inc/post-types.php:78
+msgid "Add New Case"
+msgstr ""
+
+#: inc/post-types.php:79
+msgid "Edit Case"
+msgstr ""
+
+#: inc/post-types.php:80
+msgid "Cases"
+msgstr ""
+
+#: inc/post-types.php:94
+msgid "Case Regions"
+msgstr ""
+
+#: inc/post-types.php:95
+msgid "Case Region"
+msgstr ""
+
+#: inc/post-types.php:96
+msgid "Regions"
+msgstr ""
+
+#: inc/post-types.php:109
+msgid "Inquiry"
+msgstr ""
+
+#: inc/post-types.php:110
+msgid "View Inquiry"
+msgstr ""
+
+#: inc/post-types.php:111
+msgid "Search Inquiries"
+msgstr ""
+
+#: inc/post-types.php:112
+msgid "No inquiries yet."
+msgstr ""
+
+#: inc/setup.php:46
+msgid "Blog Sidebar"
+msgstr ""
+
+#: inc/setup.php:48
+msgid "Shows next to blog posts, archives and search results. Leave empty to keep the full-width layout."
+msgstr ""
+
+#: inc/template-tags.php:43
+msgid "Ice & Heat Technology"
+msgstr ""
+
+#: inc/template-tags.php:82
+msgid "General"
+msgstr ""
+
+#: inc/template-tags.php:132
+msgid "Distributor"
+msgstr ""
+
+#: inc/template-tags.php:133
+msgid "Hotel"
+msgstr ""
+
+#: inc/template-tags.php:136
+msgid "Office"
+msgstr ""
+
+#: inc/template-tags.php:137
+msgid "E-commerce"
+msgstr ""
+
+#: inc/template-tags.php:194
+msgid "Breadcrumb"
+msgstr ""
+
+#: inc/template-tags.php:212
+msgid "Search results"
+msgstr ""
+
+#: template-parts/form-inquiry.php:15
+msgid "Send an inquiry"
+msgstr ""
+
+#: template-parts/form-inquiry.php:16
+msgid "Our sales engineers reply within one business day."
+msgstr ""
+
+
+#: inc/plugin-guide.php
+msgid "0 · Site pages — the complete site in one click"
+msgstr ""
+
+#: inc/plugin-guide.php
+msgid "A fresh WordPress starts with no About / Services / Solutions / Contact pages — every link in the header would 404. Create the seven core pages pre-filled with their designed block layouts, plus the navigation menus and the static front page."
+msgstr ""
+
+#: inc/plugin-guide.php
+msgid "Dazhen pages"
+msgstr ""
+
+#: inc/plugin-guide.php
+msgid "All pages exist: Home, About Us, Services, Solutions, Contact, FAQ, Blog."
+msgstr ""
+
+#: inc/plugin-guide.php
+msgid "Edit them →"
+msgstr ""
+
+#: inc/plugin-guide.php
+msgid "Missing: %s."
+msgstr ""
+
+#: inc/plugin-guide.php
+msgid "Only missing pages are created — existing content is never overwritten. Menus and the front page are set only when empty."
+msgstr ""
+
+#: inc/plugin-guide.php
+msgid "Log in as an administrator to initialize the pages."
+msgstr ""
+
+#: inc/plugin-guide.php
+msgid "Install the block engine below first — the ready-made pages ship with it. On a fresh site they are even created automatically right after activation."
+msgstr ""
+
+msgid "The active Dazhen Blocks plugin (v%s) is too old for the ready-made pages — the site initializer shipped with v2.0.1. Update it with one click:"
+msgstr ""
+
+msgid "Update the block engine now"
+msgstr ""
+
+msgid "Replaces the old copy with the version bundled in this theme — your pages and blocks are untouched."
+msgstr ""
+
+msgid "Active — v%s · 17 content blocks, 8 page layouts, 18 patterns."
+msgstr ""
+
+msgid "Outdated copy active (v%s) — the page initializer and newest blocks are missing."
+msgstr ""
+
+msgid "Update to the bundled version"
+msgstr ""

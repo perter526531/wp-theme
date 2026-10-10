@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "The mockups exhibit high rendering quality with a professional, clean aesthetic. Alignment is consistent across the grid and footer sections. A notable issue is the text truncation of card titles in Image 1 (and partially in Image 2), which cuts off key information. The typography, spacing, and color palette effectively support a B2B brand identity. Overall, the layout is well-structured, though fixing the header overflow is necessary for a polished final product.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790645089,
+  "id": "20260929092444c98a544fff1a4228",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260929092444c98a544fff1a4228",
+  "usage": {
+    "completion_tokens": 93,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 5503,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 5596
+  }
+}

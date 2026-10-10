@@ -1,0 +1,217 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"settings": {
+		"layout": {
+			"contentSize": "768px",
+			"wideSize": "1280px"
+		},
+		"useRootPaddingAwareAlignments": true,
+		"color": {
+			"custom": false,
+			"defaultPalette": false,
+			"defaultGradients": false,
+			"palette": [
+				{
+					"slug": "deep",
+					"name": "Deep Sea (A-zone background)",
+					"color": "#062A33"
+				},
+				{
+					"slug": "deep-2",
+					"name": "Deep Sea Raised",
+					"color": "#05242E"
+				},
+				{
+					"slug": "deep-3",
+					"name": "Deep Sea Footer",
+					"color": "#041E26"
+				},
+				{
+					"slug": "cyan",
+					"name": "Glacier Cyan (A-zone accent)",
+					"color": "#00C2D1"
+				},
+				{
+					"slug": "amber",
+					"name": "Amber CTA",
+					"color": "#FFB454"
+				},
+				{
+					"slug": "ink",
+					"name": "Graphite Ink (B-zone text)",
+					"color": "#1C2B33"
+				},
+				{
+					"slug": "ink-muted",
+					"name": "Ink Muted",
+					"color": "#5B6B73"
+				},
+				{
+					"slug": "paper",
+					"name": "Paper (B-zone background)",
+					"color": "#FFFFFF"
+				},
+				{
+					"slug": "paper-alt",
+					"name": "Paper Alt",
+					"color": "#F6FAFB"
+				},
+				{
+					"slug": "teal",
+					"name": "Duck Teal (B-zone accent)",
+					"color": "#0F766E"
+				},
+				{
+					"slug": "white",
+					"name": "White",
+					"color": "#FFFFFF"
+				},
+				{
+					"slug": "black",
+					"name": "Black",
+					"color": "#000000"
+				}
+			]
+		},
+		"typography": {
+			"fluid": true,
+			"fontFamilies": [
+				{
+					"slug": "display",
+					"name": "Space Grotesk (Headings)",
+					"fontFamily": "\"Space Grotesk\", \"Noto Sans SC\", system-ui, sans-serif"
+				},
+				{
+					"slug": "body",
+					"name": "Inter (Body)",
+					"fontFamily": "Inter, \"Noto Sans SC\", system-ui, sans-serif"
+				}
+			],
+			"fontSizes": [
+				{
+					"slug": "small",
+					"name": "Small",
+					"size": "0.875rem",
+					"fluid": false
+				},
+				{
+					"slug": "medium",
+					"name": "Medium",
+					"size": "1rem",
+					"fluid": false
+				},
+				{
+					"slug": "large",
+					"name": "Large",
+					"size": "1.125rem"
+				},
+				{
+					"slug": "x-large",
+					"name": "Extra Large",
+					"size": "clamp(1.5rem, 1.4rem + 0.5vw, 2.25rem)"
+				},
+				{
+					"slug": "xx-large",
+					"name": "Display",
+					"size": "clamp(2rem, 1.6rem + 2vw, 3.75rem)"
+				}
+			]
+		},
+		"spacing": {
+			"units": ["px", "rem", "%", "vw"],
+			"spacingSizes": [
+				{
+					"slug": "20",
+					"name": "1",
+					"size": "1rem"
+				},
+				{
+					"slug": "40",
+					"name": "2",
+					"size": "1.5rem"
+				},
+				{
+					"slug": "50",
+					"name": "3",
+					"size": "2rem"
+				},
+				{
+					"slug": "60",
+					"name": "4",
+					"size": "3rem"
+				},
+				{
+					"slug": "70",
+					"name": "5",
+					"size": "4rem"
+				},
+				{
+					"slug": "80",
+					"name": "6",
+					"size": "6rem"
+				}
+			]
+		},
+		"border": {
+			"radius": {
+				"sm": "8px",
+				"md": "16px",
+				"lg": "24px",
+				"pill": "999px"
+			}
+		}
+	},
+	"styles": {
+		"color": {
+			"background": "var(--wp--preset--color--paper)",
+			"text": "var(--wp--preset--color--ink)"
+		},
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--body)",
+			"fontSize": "var(--wp--preset--font-size--medium)",
+			"lineHeight": "1.65"
+		},
+		"elements": {
+			"heading": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--display)",
+					"fontWeight": "700",
+					"lineHeight": "1.15"
+				}
+			},
+			"link": {
+				"color": {
+					"text": "var(--wp--preset--color--teal)"
+				},
+				":hover": {
+					"color": {
+						"text": "var(--wp--preset--color--cyan)"
+					}
+				}
+			},
+			"button": {
+				"border": {
+					"radius": "999px"
+				},
+				"color": {
+					"background": "var(--wp--preset--color--amber)",
+					"text": "#062A33"
+				},
+				"typography": {
+					"fontWeight": "700"
+				}
+			}
+		},
+		"blocks": {
+			"core/button": {
+				"border": {
+					"radius": "999px"
+				}
+			}
+		}
+	},
+	"customSections": {
+		"note": "A×B rhythm: deep sections use deep/deep-2/deep-3 backgrounds with white text and cyan accents; reading sections use paper/paper-alt with ink text and teal accents. CTA buttons are always amber on deep ink text — the single strongest conversion color on the site."
+	}
+}

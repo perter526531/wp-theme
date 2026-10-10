@@ -1,0 +1,21 @@
+/*
+Theme Name: Dazhen
+Theme URI: https://dazhenglobal.com/
+Author: Dazhen Tech
+Author URI: https://dazhenglobal.com/
+Description: Custom B2B inquiry-oriented theme for Dazhen (大振科技) — smart water appliance manufacturer. A×B design system: deep-sea tech showcase (A) + minimal international reading (B). Includes product catalog with structured spec tables, solutions & success cases, OEM/ODM services, blog, and a built-in inquiry management system with email forwarding notifications. Translation-ready, Polylang-compatible, self-hosted fonts, zero commercial dependencies.
+Version: 0.4.2
+Requires at least: 6.5
+Tested up to: 6.7
+Requires PHP: 8.1
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: dazhen
+Tags: b2b, manufacturing, one-column, custom-menu, custom-logo, featured-images, translation-ready, block-styles, wide-blocks
+*/
+
+/*
+ * Design tokens live in assets/css/main.css (CSS custom properties) and are
+ * mirrored in theme.json for the block editor. This file only carries the
+ * required theme header above — keep all styles in assets/css/main.css.
+ */

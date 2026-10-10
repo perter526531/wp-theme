@@ -1,0 +1,18 @@
+/*
+ * Dazhen theme — admin styles for the field engine.
+ */
+
+.dazhen-fields { display: grid; gap: 20px; }
+.dazhen-field__label { display: block; margin-bottom: 6px; }
+.dazhen-field__desc { margin: 4px 0 8px; color: #66707a; font-size: 12px; }
+
+.dazhen-repeater__rows { display: grid; gap: 6px; margin-bottom: 8px; }
+.dazhen-repeater__row { display: flex; gap: 6px; align-items: center; }
+.dazhen-repeater__row input[type="text"] { flex: 1; min-width: 0; }
+.dazhen-repeater__remove { color: #b32d2e; font-size: 16px; line-height: 1; cursor: pointer; border: 0; background: none; padding: 4px 6px; }
+
+.dazhen-media-multi__thumbs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; }
+.dazhen-media-multi__thumb { width: 80px; height: 80px; object-fit: cover; border: 1px solid #dcdcde; border-radius: 6px; }
+
+.dazhen-post-multi { display: grid; gap: 4px; margin: 0; max-height: 260px; overflow-y: auto; border: 1px solid #dcdcde; border-radius: 6px; padding: 10px 12px; }
+.dazhen-post-multi li { margin: 0; }

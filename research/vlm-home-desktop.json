@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "The design renders professionally with a clean, structured layout. Typography is clear, and the card-based hero section is well-aligned. No text overlap or truncation is visible; the layout appears stable and responsive. The dark teal background combined with cyan accents and amber CTAs creates a sophisticated, high-contrast look that feels premium and modern for a B2B tech brand. The color scheme effectively balances professionalism with visual interest.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790645058,
+  "id": "20260929092415ea51ea4f7fd6416c",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260929092415ea51ea4f7fd6416c",
+  "usage": {
+    "completion_tokens": 85,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2800,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2885
+  }
+}

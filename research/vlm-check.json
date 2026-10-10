@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "**检查结果：**\n\n1.  **页面样式：正常。** 页面采用了专业的卡片式布局（Card Layout），具有清晰的栅格系统（左侧视觉图，右侧信息栏）。配色方案专业，深色科技风（Direction A）与极简白（Direction B）对比鲜明。\n2.  **文字情况：良好。** 文字排版清晰，行距适中，未发现明显的文字重叠或截断现象。标题、正文和标签的层级分明。\n3.  **整体布局：非常专业。** 典型的设计提案/设计系统展示风格（类似 Dribbble 或 Behance 的高质量 Case Study）。包含品牌色板、字体规范、优劣势分析等细节，视觉呈现精致。\n\n**总结：** 这是一个渲染质量很高、布局严谨的专业设计展示页面。",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790638327,
+  "id": "2026092907320112a3d2b6e264446d",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "2026092907320112a3d2b6e264446d",
+  "usage": {
+    "completion_tokens": 171,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2776,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2947
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "**Image 1:**\nThe large wordmark is **HUIZHEN汇真**.\nThe text below is **HIGH-END ICE & HEAT TECHNOLOGY SPECIALIST**.\n\n**Image 2:**\nThe banner displays various **water dispensers**, including wall-mounted, countertop, and built-in models. The background color is **beige/tan**.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1790644476,
+  "id": "20260929091433cf236919e71b4012",
+  "model": "glm-5v-turbo",
+  "object": "chat.completion",
+  "request_id": "20260929091433cf236919e71b4012",
+  "usage": {
+    "completion_tokens": 76,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens": 2537,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 2613
+  }
+}

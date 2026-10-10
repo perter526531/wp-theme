@@ -1,0 +1,178 @@
+<?php
+/**
+ * Standalone inquiry fallback — only loaded when the Dazhen theme is absent.
+ *
+ * The theme ships the full 7-field inquiry system (CPT inbox + email). This
+ * compact module gives the plugin its own honest minimum on any other site:
+ * a lead form block, a REST endpoint, and a simple Leads inbox.
+ *
+ * @package Dazhen_Blocks
+ */
+
+defined( 'ABSPATH' ) || exit;
+
+/**
+ * Register the lead CPT + its admin menu.
+ */
+function dzb_leads_boot(): void {
+	register_post_type( 'dzb_lead', array(
+		'labels'        => array(
+			'name'          => __( 'Leads', 'dazhen-blocks' ),
+			'singular_name' => __( 'Lead', 'dazhen-blocks' ),
+			'menu_name'     => __( 'Leads · 询盘', 'dazhen-blocks' ),
+			'not_found'     => __( 'No leads yet — they appear here the moment someone submits your inquiry form.', 'dazhen-blocks' ),
+		),
+		'public'        => false,
+		'show_ui'       => true,
+		'menu_icon'     => 'dashicons-email-alt',
+		'menu_position' => 26,
+		'supports'      => array( 'title' ),
+		'capability_type' => 'post',
+	) );
+
+	add_action( 'add_meta_boxes', static function (): void {
+		add_meta_box(
+			'dzb_lead_fields',
+			__( 'Lead details', 'dazhen-blocks' ),
+			static function ( WP_Post $post ): void {
+				$keys = dzb_lead_keys();
+				echo '<table class="form-table"><tbody>';
+				foreach ( $keys as $key => $label ) {
+					$value = (string) get_post_meta( $post->ID, '_dzb_' . $key, true );
+					echo '<tr><th scope="row">' . esc_html( $label ) . '</th><td>' . esc_html( $value ) . '</td></tr>';
+				}
+				echo '</tbody></table>';
+			},
+			'dzb_lead',
+			'normal',
+			'high'
+		);
+	} );
+}
+add_action( 'init', 'dzb_leads_boot', 5 );
+
+/**
+ * The lead field keys (order matters).
+ *
+ * @return array<string,string>
+ */
+function dzb_lead_keys(): array {
+	return array(
+		'person'  => __( 'Contact person', 'dazhen-blocks' ),
+		'email'   => __( 'Email', 'dazhen-blocks' ),
+		'company' => __( 'Company', 'dazhen-blocks' ),
+		'phone'   => __( 'Phone / WhatsApp', 'dazhen-blocks' ),
+		'country' => __( 'Country', 'dazhen-blocks' ),
+		'product' => __( 'Product interest', 'dazhen-blocks' ),
+		'message' => __( 'Message', 'dazhen-blocks' ),
+	);
+}
+
+/**
+ * Register the REST endpoint.
+ */
+function dzb_leads_rest(): void {
+	register_rest_route( 'dazhen-blocks/v1', '/lead', array(
+		'methods'             => 'POST',
+		'permission_callback' => '__return_true', // Public form; honeypot below.
+		'args'                => array(
+			'person'  => array( 'type' => 'string', 'required' => true ),
+			'email'   => array( 'type' => 'string', 'required' => true ),
+			'company' => array( 'type' => 'string' ),
+			'phone'   => array( 'type' => 'string' ),
+			'country' => array( 'type' => 'string' ),
+			'product' => array( 'type' => 'string' ),
+			'message' => array( 'type' => 'string' ),
+		),
+		'callback'            => 'dzb_leads_handle',
+	) );
+}
+add_action( 'rest_api_init', 'dzb_leads_rest' );
+
+/**
+ * Handle a lead submission.
+ */
+function dzb_leads_handle( WP_REST_Request $request ) {
+	// Honeypot — bots fill every field they see.
+	if ( '' !== trim( (string) $request->get_param( 'website' ) ) ) {
+		return array( 'ok' => true ); // Pretend success, store nothing.
+	}
+
+	$data = array(
+		'person'  => sanitize_text_field( (string) $request->get_param( 'person' ) ),
+		'email'   => sanitize_email( (string) $request->get_param( 'email' ) ),
+		'company' => sanitize_text_field( (string) $request->get_param( 'company' ) ),
+		'phone'   => sanitize_text_field( (string) $request->get_param( 'phone' ) ),
+		'country' => sanitize_text_field( (string) $request->get_param( 'country' ) ),
+		'product' => sanitize_text_field( (string) $request->get_param( 'product' ) ),
+		'message' => sanitize_textarea_field( (string) $request->get_param( 'message' ) ),
+	);
+
+	if ( '' === $data['person'] || ! is_email( $data['email'] ) ) {
+		return new WP_Error( 'dzb_invalid', __( 'Please fill in your name and a valid email.', 'dazhen-blocks' ), array( 'status' => 400 ) );
+	}
+
+	$ip = isset( $_SERVER['REMOTE_ADDR'] ) ? sanitize_text_field( wp_unslash( $_SERVER['REMOTE_ADDR'] ) ) : '';
+
+	$post_id = wp_insert_post( array(
+		'post_type'   => 'dzb_lead',
+		'post_status' => 'private',
+		'post_title'  => $data['person'] . ( '' !== $data['company'] ? ' — ' . $data['company'] : '' ),
+	), true );
+
+	if ( is_wp_error( $post_id ) ) {
+		return new WP_Error( 'dzb_store', __( 'Could not store the lead. Please try again.', 'dazhen-blocks' ), array( 'status' => 500 ) );
+	}
+
+	foreach ( $data as $key => $value ) {
+		update_post_meta( $post_id, '_dzb_' . $key, $value );
+	}
+	update_post_meta( $post_id, '_dzb_ip', $ip );
+
+	// Email the admin (best effort — sites without SMTP simply log).
+	$to      = get_option( 'admin_email' );
+	$subject = sprintf( '[%s] New lead: %s', wp_specialchars_decode( get_bloginfo( 'name' ), ENT_QUOTES ), $data['person'] );
+	$body    = '';
+	foreach ( dzb_lead_keys() as $key => $label ) {
+		$body .= $label . ': ' . $data[ $key ] . "\n";
+	}
+	$body .= 'IP: ' . $ip . "\n";
+	wp_mail( $to, $subject, $body, array( 'Reply-To: ' . $data['person'] . ' <' . $data['email'] . '>' ) );
+
+	return array( 'ok' => true );
+}
+
+/**
+ * The compact standalone form (used by the inquiry block without the theme).
+ */
+function dzb_leads_form( string $product = '', string $message = '' ): string {
+	$id = wp_unique_id( 'dzb-form-' );
+
+	$html  = '<form class="dzb-form" id="' . esc_attr( $id ) . '" novalidate>';
+	$html .= '<div class="dzb-form__grid">';
+	$html .= '<p class="dzb-form__row"><label for="' . esc_attr( $id . '-person' ) . '">' . esc_html__( 'Your name *', 'dazhen-blocks' ) . '</label>';
+	$html .= '<input id="' . esc_attr( $id . '-person' ) . '" name="person" type="text" required autocomplete="name" /></p>';
+	$html .= '<p class="dzb-form__row"><label for="' . esc_attr( $id . '-email' ) . '">' . esc_html__( 'Email *', 'dazhen-blocks' ) . '</label>';
+	$html .= '<input id="' . esc_attr( $id . '-email' ) . '" name="email" type="email" required autocomplete="email" /></p>';
+	$html .= '<p class="dzb-form__row"><label for="' . esc_attr( $id . '-company' ) . '">' . esc_html__( 'Company', 'dazhen-blocks' ) . '</label>';
+	$html .= '<input id="' . esc_attr( $id . '-company' ) . '" name="company" type="text" autocomplete="organization" /></p>';
+	$html .= '<p class="dzb-form__row"><label for="' . esc_attr( $id . '-phone' ) . '">' . esc_html__( 'Phone / WhatsApp', 'dazhen-blocks' ) . '</label>';
+	$html .= '<input id="' . esc_attr( $id . '-phone' ) . '" name="phone" type="text" autocomplete="tel" /></p>';
+	$html .= '</div>';
+	$html .= '<p class="dzb-form__row"><label for="' . esc_attr( $id . '-message' ) . '">' . esc_html__( 'What do you need? *', 'dazhen-blocks' ) . '</label>';
+	$html .= '<textarea id="' . esc_attr( $id . '-message' ) . '" name="message" rows="5" required>' . esc_textarea( $message ) . '</textarea></p>';
+
+	// Product interest (read-only pre-fill line).
+	$html .= '<input type="hidden" name="product" value="' . esc_attr( $product ) . '" />';
+
+	// Honeypot.
+	$html .= '<p class="dzb-hp" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off" /></label></p>';
+
+	$html .= '<p class="dzb-form__actions">';
+	$html .= '<button class="dzb-btn dzb-btn--cta" type="submit">' . esc_html__( 'Send inquiry', 'dazhen-blocks' ) . '</button>';
+	$html .= '<span class="dzb-form__note" data-dzb-form-note aria-live="polite"></span>';
+	$html .= '</p>';
+	$html .= '</form>';
+
+	return $html;
+}

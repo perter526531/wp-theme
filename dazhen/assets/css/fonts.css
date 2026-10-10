@@ -1,0 +1,22 @@
+/*
+ * Dazhen — self-hosted variable fonts (latin subsets).
+ * Space Grotesk (display) + Inter (body). ~70KB total.
+ * Noto Sans SC is intentionally NOT loaded in phase 1 (EN launch);
+ * it ships with the phase-2 multilingual expansion.
+ */
+
+@font-face {
+	font-family: "Space Grotesk";
+	src: url("../fonts/space-grotesk-latin-var.woff2") format("woff2");
+	font-weight: 300 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Inter";
+	src: url("../fonts/inter-latin-var.woff2") format("woff2");
+	font-weight: 100 900;
+	font-style: normal;
+	font-display: swap;
+}

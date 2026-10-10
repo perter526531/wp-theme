@@ -1,0 +1,1952 @@
+# Copyright (C) 2026 Dazhen Technology
+msgid ""
+msgstr ""
+"Project-Id-Version: Dazhen Blocks 2.0.0\n"
+"Report-Msgid-Bugs-To: https://example.com/dazhen_blocks\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-10-01 04:20+0800\n"
+
+#: inc/seeder.php:103
+msgid "%d page filled."
+msgstr ""
+
+#: inc/seeder.php:138
+msgid "%d page still empty."
+msgstr ""
+
+#: inc/layouts.php:276
+msgid "+86 752 5555 018\nMon–Sat 9:00–19:00 (GMT+8)"
+msgstr ""
+
+#: inc/layouts.php:68
+msgid "1% spare parts per order, 12-month warranty, video-guided repairs."
+msgstr ""
+
+#: inc/layouts.php:202
+msgid "1% spare parts per shipment, 12-month warranty, replacement parts couriered within 72h."
+msgstr ""
+
+#: inc/patterns.php:130
+msgid "1% spares, 12-month warranty."
+msgstr ""
+
+#: inc/patterns.php:174
+msgid "100% aging test before packing."
+msgstr ""
+
+#: inc/layouts.php:189
+msgid "100% powered-on aging, AQL 1.0 final inspection, photo documentation."
+msgstr ""
+
+#: inc/patterns.php:205
+msgid "45 days typical for a new model, 25 days for reorders."
+msgstr ""
+
+#: inc/layouts.php:346
+msgid "< 30dB wireless pump — the #1 review driver in this category."
+msgstr ""
+
+#: inc/layouts.php:140
+msgid "A bilingual engineer-owner handles your account from RFQ to after-sales."
+msgstr ""
+
+#: inc/layouts.php:95
+msgid "A drawing, a competitor link or even a rough idea is enough to start."
+msgstr ""
+
+#: inc/patterns.php:217
+msgid "A drawing, a link or a rough idea is enough to start."
+msgstr ""
+
+#: inc/blocks-content.php:170
+msgid "A grid of icon cards — reasons to trust you, service highlights, capabilities."
+msgstr ""
+
+#: inc/blocks-proof.php:21
+msgid "A grid of images — products, factory floor, trade fair booths."
+msgstr ""
+
+#: inc/blocks-convert.php:21
+msgid "A live grid of your product catalog — new products appear automatically. With the Dazhen theme active each card uses the theme's product card design."
+msgstr ""
+
+#: inc/layouts.php:62
+msgid "A manufacturing partner, not just a supplier."
+msgstr ""
+
+#: inc/patterns.php:166
+msgid "A numbered journey — the OEM workflow or any how-it-works."
+msgstr ""
+
+#: inc/blocks-content.php:299
+msgid "A numbered journey — the OEM workflow, an onboarding path, a quality procedure."
+msgstr ""
+
+#: inc/blocks-proof.php:143
+msgid "A quiet wall of client or partner logos. Falls back to text chips when no images are set."
+msgstr ""
+
+#: inc/patterns.php:143
+msgid "A short paragraph that carries the argument. Keep it to three or four lines and let the checklist do the persuading."
+msgstr ""
+
+#: inc/layouts.php:445
+msgid "A standalone frequently-asked-questions page."
+msgstr ""
+
+#: inc/layouts.php:386
+msgid "A two-column opener"
+msgstr ""
+
+#: inc/blocks-proof.php:203
+msgid "A two-column parameter table — model specs, material data, service terms."
+msgstr ""
+
+#: inc/blocks-content.php:108
+msgid "A two-column section: story or argument on one side, image on the other. Great for factory, process or about passages."
+msgstr ""
+
+#: inc/layouts.php:108
+msgid "ABOUT DAZHEN"
+msgstr ""
+
+#: inc/layouts.php:306
+msgid "ALL TOPICS"
+msgstr ""
+
+#: inc/layouts.php:428
+msgid "About — story, milestones, principles"
+msgstr ""
+
+#: inc/blocks-proof.php:263
+msgid "Accordion questions and answers — OEM terms, after-sales, logistics."
+msgstr ""
+
+#: inc/blocks-content.php:196
+#: inc/blocks-convert.php:294
+msgid "Add a card"
+msgstr ""
+
+#: inc/blocks-content.php:387
+msgid "Add a milestone"
+msgstr ""
+
+#: inc/blocks-proof.php:287
+msgid "Add a question"
+msgstr ""
+
+#: inc/blocks-proof.php:98
+msgid "Add a quote"
+msgstr ""
+
+#: inc/blocks-proof.php:227
+msgid "Add a row"
+msgstr ""
+
+#: inc/blocks-content.php:261
+msgid "Add a stat"
+msgstr ""
+
+#: inc/blocks-content.php:323
+msgid "Add a step"
+msgstr ""
+
+#: inc/layouts.php:399
+msgid "Add or remove cards with the repeater control."
+msgstr ""
+
+#: inc/patterns.php:130
+msgid "After-sales"
+msgstr ""
+
+#: inc/layouts.php:68
+msgid "After-sales you can resell"
+msgstr ""
+
+#: inc/blocks-convert.php:429
+msgid "Amber (primary)"
+msgstr ""
+
+#: inc/blocks-proof.php:291
+msgid "Answer"
+msgstr ""
+
+#: inc/layouts.php:236
+msgid "Anti-scald safety locks and vandal-resistant taps."
+msgstr ""
+
+#: inc/blocks-content.php:57
+msgid "Arrangement"
+msgstr ""
+
+#: inc/layouts.php:320
+msgid "Ask directly — the engineer who builds the product will reply."
+msgstr ""
+
+#: inc/engine.php:68
+msgid "Background"
+msgstr ""
+
+#: inc/blocks-convert.php:190
+msgid "Banner"
+msgstr ""
+
+#: inc/layouts.php:83
+msgid "Best sellers this season"
+msgstr ""
+
+#: inc/patterns.php:105
+msgid "Big numbers with labels on the deep background."
+msgstr ""
+
+#: inc/blocks-content.php:236
+msgid "Big numbers with labels — capacity, experience, countries served. Reads best on the deep background."
+msgstr ""
+
+#: inc/blocks-content.php:126
+msgid "Body text"
+msgstr ""
+
+#: inc/engine.php:331
+msgid "Bolt — speed / power"
+msgstr ""
+
+#: inc/layouts.php:44
+msgid "Browse products"
+msgstr ""
+
+#: inc/layouts.php:109
+msgid "Built for water, grown by reputation"
+msgstr ""
+
+#: inc/layouts.php:343
+msgid "Built to be re-ordered"
+msgstr ""
+
+#: inc/blocks-convert.php:193
+msgid "Button label"
+msgstr ""
+
+#: inc/blocks-convert.php:421
+msgid "Button text"
+msgstr ""
+
+#: inc/blocks-convert.php:55
+msgid "Button under the grid — label"
+msgstr ""
+
+#: inc/blocks-convert.php:56
+msgid "Button under the grid — link"
+msgstr ""
+
+#: inc/blocks-content.php:41
+msgid "Buttons"
+msgstr ""
+
+#: inc/layouts.php:187
+msgid "CE / RoHS / FCC / UKCA handled by our compliance team."
+msgstr ""
+
+#: inc/layouts.php:310
+msgid "CE, RoHS, FCC and UKCA on most models; food-contact material reports on request."
+msgstr ""
+
+#: inc/layouts.php:266
+msgid "CONTACT"
+msgstr ""
+
+#: inc/blocks-convert.php:172
+msgid "CTA Banner"
+msgstr ""
+
+#: inc/patterns.php:212
+msgid "CTA — conversion banner · 行动号召"
+msgstr ""
+
+#: inc/layouts.php:313
+msgid "Can we visit the factory?"
+msgstr ""
+
+#: inc/layouts.php:200
+msgid "Can you do our language?"
+msgstr ""
+
+#: inc/blocks-content.php:195
+#: inc/blocks-convert.php:293
+msgid "Card"
+msgstr ""
+
+#: inc/blocks-content.php:187
+#: inc/blocks-content.php:193
+#: inc/blocks-convert.php:285
+#: inc/blocks-convert.php:291
+msgid "Cards"
+msgstr ""
+
+#: inc/patterns.php:119
+msgid "Cards — feature grid · 卖点卡片"
+msgstr ""
+
+#: inc/blocks-content.php:61
+msgid "Centered"
+msgstr ""
+
+#: inc/layouts.php:187
+msgid "Certification"
+msgstr ""
+
+#: inc/patterns.php:127
+msgid "Certified"
+msgstr ""
+
+#: inc/layouts.php:65
+msgid "Certified quality system"
+msgstr ""
+
+#: inc/blocks-content.php:127
+msgid "Checklist (one per line)"
+msgstr ""
+
+#: inc/blocks-proof.php:142
+msgid "Client Logos"
+msgstr ""
+
+#: inc/blocks-proof.php:71
+msgid "Client quotes with name and role — social proof for B2B buyers."
+msgstr ""
+
+#: inc/patterns.php:183
+msgid "Client quotes with name and role."
+msgstr ""
+
+#: inc/blocks-convert.php:307
+msgid "Clock"
+msgstr ""
+
+#: inc/layouts.php:405
+msgid "Close with one clear action"
+msgstr ""
+
+#: inc/blocks-content.php:190
+#: inc/blocks-convert.php:42
+#: inc/blocks-convert.php:288
+#: inc/blocks-proof.php:42
+#: inc/blocks-proof.php:92
+msgid "Columns"
+msgstr ""
+
+#: inc/layouts.php:148
+msgid "Come audit the factory"
+msgstr ""
+
+#: inc/engine.php:81
+msgid "Compact"
+msgstr ""
+
+#: inc/leads.php:63
+#: inc/leads.php:157
+msgid "Company"
+msgstr ""
+
+#: inc/layouts.php:429
+msgid "Company story with a year timeline."
+msgstr ""
+
+#: inc/patterns.php:25
+msgid "Complete pages assembled from Dazhen blocks — insert one, edit everything."
+msgstr ""
+
+#: inc/layouts.php:112
+msgid "Contact"
+msgstr ""
+
+#: inc/blocks-convert.php:267
+msgid "Contact Cards"
+msgstr ""
+
+#: inc/leads.php:61
+msgid "Contact person"
+msgstr ""
+
+#: inc/layouts.php:440
+msgid "Contact — info cards + inquiry form"
+msgstr ""
+
+#: inc/blocks-convert.php:364
+msgid "Container"
+msgstr ""
+
+#: inc/blocks-content.php:123
+msgid "Content"
+msgstr ""
+
+#: inc/blocks-convert.php:369
+msgid "Content width"
+msgstr ""
+
+#: inc/leads.php:124
+msgid "Could not store the lead. Please try again."
+msgstr ""
+
+#: inc/layouts.php:234
+msgid "Countertop dispensers and ice makers sized for family kitchens."
+msgstr ""
+
+#: inc/leads.php:65
+msgid "Country"
+msgstr ""
+
+#: inc/engine.php:332
+msgid "Cube — product / OEM"
+msgstr ""
+
+#: dazhen-blocks.php:86
+msgid "Dazhen Blocks is standing by."
+msgstr ""
+
+#: inc/patterns.php:36
+msgid "Dazhen Blocks · 大振内容块"
+msgstr ""
+
+#: inc/patterns.php:24
+msgid "Dazhen Pages · 大振整页模板"
+msgstr ""
+
+#: inc/patterns.php:28
+msgid "Dazhen Sections · 大振区段"
+msgstr ""
+
+#: inc/layouts.php:119
+msgid "Dazhen was founded in 2013 around a single belief: drinking-water equipment should be engineered, not assembled. Today our ice makers, water dispensers and smart pet fountains ship to 38 countries under our partners' brands."
+msgstr ""
+
+#: inc/engine.php:71
+msgid "Deep sea (dark)"
+msgstr ""
+
+#: inc/patterns.php:90
+msgid "Deep-sea hero with headline, intro and two buttons."
+msgstr ""
+
+#: inc/blocks-convert.php:372
+#: inc/engine.php:82
+msgid "Default"
+msgstr ""
+
+#: inc/patterns.php:175
+msgid "Delivery"
+msgstr ""
+
+#: inc/layouts.php:252
+msgid "Describe the installation space — we will shortlist for you in a day."
+msgstr ""
+
+#: inc/layouts.php:309
+msgid "Do you support small trial orders?"
+msgstr ""
+
+#: inc/layouts.php:141
+msgid "Documented everything"
+msgstr ""
+
+#: inc/engine.php:339
+msgid "Drop — water"
+msgstr ""
+
+#: inc/layouts.php:358
+#: inc/patterns.php:190
+msgid "E-commerce brand, JP"
+msgstr ""
+
+#: inc/patterns.php:93
+msgid "EYEBROW LABEL"
+msgstr ""
+
+#: inc/blocks-content.php:127
+msgid "Each line becomes a check bullet."
+msgstr ""
+
+#: inc/layouts.php:354
+msgid "Early adopters, honest words"
+msgstr ""
+
+#: inc/layouts.php:236
+msgid "Education"
+msgstr ""
+
+#: inc/layouts.php:277
+#: inc/leads.php:62
+msgid "Email"
+msgstr ""
+
+#: inc/leads.php:155
+msgid "Email *"
+msgstr ""
+
+#: inc/patterns.php:128
+msgid "Engineering"
+msgstr ""
+
+#: inc/layouts.php:186
+msgid "Engineering & samples"
+msgstr ""
+
+#: inc/layouts.php:84
+msgid "Every model supports logo printing, color customization and retail packaging."
+msgstr ""
+
+#: inc/layouts.php:307
+msgid "Everything buyers ask"
+msgstr ""
+
+#: inc/patterns.php:204
+msgid "Existing models from 500 units, full custom from 1,000."
+msgstr ""
+
+#: inc/layouts.php:199
+msgid "Existing models: 500 units (mixed models OK). Full custom: from 1,000 units or tooling amortization."
+msgstr ""
+
+#: inc/patterns.php:129
+msgid "Export ready"
+msgstr ""
+
+#: inc/layouts.php:67
+msgid "Export-ready logistics"
+msgstr ""
+
+#: inc/engine.php:57
+msgid "Eyebrow (small label above the title)"
+msgstr ""
+
+#: inc/blocks-proof.php:262
+#: inc/layouts.php:196
+#: inc/patterns.php:201
+msgid "FAQ"
+msgstr ""
+
+#: inc/patterns.php:197
+msgid "FAQ — accordions · 常见问题"
+msgstr ""
+
+#: inc/layouts.php:444
+msgid "FAQ — questions page"
+msgstr ""
+
+#: inc/layouts.php:190
+msgid "FOB / DDP options, 1% free spare parts, 12-month warranty support."
+msgstr ""
+
+#: inc/layouts.php:312
+msgid "FOB Shenzhen / Yantian as default; EXW, CIF and DDP available."
+msgstr ""
+
+#: inc/layouts.php:67
+msgid "FOB Shenzhen / Yantian, mixed-SKU containers, retail-ready packaging."
+msgstr ""
+
+#: inc/patterns.php:175
+msgid "FOB Shenzhen with full documents."
+msgstr ""
+
+#: inc/patterns.php:129
+msgid "FOB Shenzhen, retail packaging."
+msgstr ""
+
+#: inc/layouts.php:278
+msgid "Factory"
+msgstr ""
+
+#: inc/blocks-content.php:169
+msgid "Feature Cards"
+msgstr ""
+
+#: inc/patterns.php:155
+msgid "Featured products"
+msgstr ""
+
+#: inc/seeder.php:140
+msgid "Fill it with a Dazhen layout so it becomes drag-and-drop editable?"
+msgstr ""
+
+#: inc/seeder.php:174
+msgid "Fill with Dazhen layout · 填充区块模板"
+msgstr ""
+
+#: inc/seeder.php:111
+msgid "Filling failed — only administrator accounts with unfiltered_html can fill layouts."
+msgstr ""
+
+#: inc/layouts.php:186
+msgid "First functional samples in 2–3 weeks, couriered with test reports."
+msgstr ""
+
+#: inc/layouts.php:128
+msgid "First own-tooling ice maker line; ISO 9001 certified."
+msgstr ""
+
+#: inc/patterns.php:190
+msgid "First sample matched the spec exactly."
+msgstr ""
+
+#: inc/layouts.php:348
+msgid "Flat-pack box: 40% more units per container, lower landed cost."
+msgstr ""
+
+#: inc/blocks-content.php:129
+msgid "Flip sides (image left)"
+msgstr ""
+
+#: inc/blocks-convert.php:236
+msgid "Form"
+msgstr ""
+
+#: inc/layouts.php:127
+msgid "Founded in Huizhou as a dispenser assembly workshop."
+msgstr ""
+
+#: inc/layouts.php:61
+msgid "Four reasons importers stay with us"
+msgstr ""
+
+#: inc/patterns.php:124
+msgid "Four reasons to choose you"
+msgstr ""
+
+#: inc/layouts.php:231
+msgid "Four spaces, four answers"
+msgstr ""
+
+#: inc/layouts.php:301
+msgid "Frequently asked questions"
+msgstr ""
+
+#: inc/layouts.php:110
+msgid "From a 12-person workshop to a 200-worker export factory — a short story of the Daya Bay drinking-water specialist."
+msgstr ""
+
+#: inc/layouts.php:164
+msgid "From a drawing on a napkin to a container on the water — seven steps, one accountable factory."
+msgstr ""
+
+#: inc/layouts.php:41
+msgid "From countertop ice makers to smart pet fountains — one factory, the full cold-and-hot water chain, certified for EU and US export."
+msgstr ""
+
+#: inc/patterns.php:170
+msgid "From idea to shipment"
+msgstr ""
+
+#: inc/blocks-convert.php:374
+msgid "Full width"
+msgstr ""
+
+#: inc/patterns.php:173
+msgid "Functional samples in 2–3 weeks."
+msgstr ""
+
+#: inc/blocks-proof.php:20
+msgid "Gallery"
+msgstr ""
+
+#: inc/engine.php:341
+msgid "Gear — manufacturing"
+msgstr ""
+
+#: inc/blocks-content.php:44
+#: inc/blocks-convert.php:193
+#: inc/blocks-convert.php:205
+#: inc/blocks-convert.php:421
+#: inc/blocks-convert.php:437
+#: inc/layouts.php:42
+msgid "Get a Quote"
+msgstr ""
+
+#: inc/layouts.php:337
+msgid "Get the launch quote"
+msgstr ""
+
+#: inc/blocks-convert.php:308
+msgid "Globe"
+msgstr ""
+
+#: inc/engine.php:333
+msgid "Globe — export / worldwide"
+msgstr ""
+
+#: inc/layouts.php:300
+msgid "HELP CENTER"
+msgstr ""
+
+#: inc/layouts.php:39
+msgid "HIGH-END ICE & HEAT TECHNOLOGY SPECIALIST"
+msgstr ""
+
+#: inc/layouts.php:393
+msgid "HIGHLIGHTS"
+msgstr ""
+
+#: inc/patterns.php:169
+msgid "HOW IT WORKS"
+msgstr ""
+
+#: inc/layouts.php:136
+msgid "HOW WE WORK"
+msgstr ""
+
+#: inc/patterns.php:213
+msgid "Headline, promise and the amber quote button."
+msgstr ""
+
+#: inc/layouts.php:211
+msgid "Hello Dazhen, I would like to discuss an OEM project:"
+msgstr ""
+
+#: inc/blocks-content.php:21
+msgid "Hero"
+msgstr ""
+
+#: inc/patterns.php:89
+msgid "Hero — page opener · 英雄区"
+msgstr ""
+
+#: inc/layouts.php:453
+msgid "Hero, split, three cards and a CTA to begin any page."
+msgstr ""
+
+#: inc/layouts.php:235
+msgid "High-capacity floor-standing units with filter reminders."
+msgstr ""
+
+#: inc/layouts.php:234
+msgid "Home"
+msgstr ""
+
+#: inc/layouts.php:424
+msgid "Home — hero, stats, features, factory, products, CTA"
+msgstr ""
+
+#: inc/layouts.php:226
+msgid "Home, office, education, hospitality — pick the scenario, we fit the models."
+msgstr ""
+
+#: inc/patterns.php:187
+msgid "Honest words from early adopters"
+msgstr ""
+
+#: inc/layouts.php:237
+msgid "Hospitality"
+msgstr ""
+
+#: inc/layouts.php:181
+msgid "How an OEM order runs"
+msgstr ""
+
+#: inc/layouts.php:311
+msgid "How are goods packed?"
+msgstr ""
+
+#: inc/layouts.php:202
+msgid "How do you handle after-sales?"
+msgstr ""
+
+#: inc/blocks-convert.php:41
+msgid "How many products"
+msgstr ""
+
+#: inc/layouts.php:441
+msgid "How to reach the factory, then the form."
+msgstr ""
+
+#: inc/layouts.php:284
+#: inc/patterns.php:227
+msgid "INQUIRY"
+msgstr ""
+
+#: inc/layouts.php:65
+msgid "ISO 9001 factory with CE / RoHS / FCC product compliance handled in-house."
+msgstr ""
+
+#: inc/patterns.php:127
+msgid "ISO 9001, CE, RoHS handled in-house."
+msgstr ""
+
+#: inc/blocks-content.php:201
+#: inc/blocks-convert.php:301
+msgid "Icon"
+msgstr ""
+
+#: inc/patterns.php:120
+msgid "Icon cards for reasons and highlights."
+msgstr ""
+
+#: inc/blocks-content.php:128
+msgid "Image"
+msgstr ""
+
+#: inc/blocks-content.php:64
+msgid "Image (split layout)"
+msgstr ""
+
+#: inc/blocks-proof.php:38
+#: inc/blocks-proof.php:41
+msgid "Images"
+msgstr ""
+
+#: inc/layouts.php:76
+msgid "Injection, assembly, testing and packaging under the same roof — that is how lead times stay short and quality stays accountable."
+msgstr ""
+
+#: inc/blocks-convert.php:222
+msgid "Inquiry Form"
+msgstr ""
+
+#: inc/patterns.php:223
+msgid "Inquiry — lead form · 询盘表单"
+msgstr ""
+
+#: inc/engine.php:59
+msgid "Intro line"
+msgstr ""
+
+#: inc/layouts.php:397
+msgid "Keep each card to two short lines — scannability wins."
+msgstr ""
+
+#: inc/blocks-content.php:265
+msgid "Label"
+msgstr ""
+
+#: inc/layouts.php:448
+msgid "Landing — campaign page"
+msgstr ""
+
+#: inc/layouts.php:364
+msgid "Launch window: Q2 production slots"
+msgstr ""
+
+#: inc/blocks-content.php:52
+msgid "Layout"
+msgstr ""
+
+#: inc/seeder.php:58
+msgid "Layouts can only be filled into pages."
+msgstr ""
+
+#: inc/leads.php:21
+msgid "Lead"
+msgstr ""
+
+#: inc/leads.php:36
+msgid "Lead details"
+msgstr ""
+
+#: inc/patterns.php:205
+msgid "Lead time?"
+msgstr ""
+
+#: inc/leads.php:20
+msgid "Leads"
+msgstr ""
+
+#: inc/leads.php:22
+msgid "Leads · 询盘"
+msgstr ""
+
+#: inc/engine.php:340
+msgid "Leaf — eco"
+msgstr ""
+
+#: inc/blocks-content.php:45
+msgid "Leave empty with the Dazhen theme active to open the inquiry popup."
+msgstr ""
+
+#: inc/layouts.php:285
+#: inc/patterns.php:228
+msgid "Leave your requirement"
+msgstr ""
+
+#: inc/blocks-convert.php:423
+msgid "Link URL (optional)"
+msgstr ""
+
+#: inc/blocks-convert.php:306
+msgid "Location"
+msgstr ""
+
+#: inc/blocks-proof.php:165
+msgid "Logo images"
+msgstr ""
+
+#: inc/blocks-proof.php:162
+msgid "Logos"
+msgstr ""
+
+#: inc/layouts.php:142
+msgid "Long view"
+msgstr ""
+
+#: inc/layouts.php:357
+#: inc/patterns.php:189
+msgid "M. Weber"
+msgstr ""
+
+#: inc/layouts.php:243
+msgid "MATCHING MODELS"
+msgstr ""
+
+#: inc/layouts.php:124
+msgid "MILESTONES"
+msgstr ""
+
+#: inc/layouts.php:175
+msgid "MOQ for custom color"
+msgstr ""
+
+#: inc/engine.php:337
+msgid "Magnifier — inspection"
+msgstr ""
+
+#: inc/blocks-convert.php:305
+msgid "Mail"
+msgstr ""
+
+#: inc/layouts.php:189
+msgid "Mass production"
+msgstr ""
+
+#: inc/engine.php:334
+msgid "Medal — certification"
+msgstr ""
+
+#: inc/blocks-convert.php:49
+msgid "Menu order (curated)"
+msgstr ""
+
+#: inc/leads.php:67
+msgid "Message"
+msgstr ""
+
+#: inc/blocks-content.php:386
+msgid "Milestone"
+msgstr ""
+
+#: inc/blocks-content.php:362
+#: inc/blocks-content.php:384
+msgid "Milestones"
+msgstr ""
+
+#: inc/layouts.php:334
+msgid "NEW SERIES 2026"
+msgstr ""
+
+#: inc/layouts.php:93
+msgid "NEXT STEP"
+msgstr ""
+
+#: inc/blocks-convert.php:373
+msgid "Narrow (reading)"
+msgstr ""
+
+#: inc/layouts.php:131
+msgid "New Daya Bay plant: 2 SMT + 4 assembly lines."
+msgstr ""
+
+#: inc/blocks-convert.php:50
+msgid "Newest first"
+msgstr ""
+
+#: inc/blocks-convert.php:65
+msgid "No \"product\" catalog on this site yet. Activate the Dazhen theme (it registers the product post type), then this grid fills itself."
+msgstr ""
+
+#: inc/layouts.php:268
+msgid "No agents, no trading company — your message reaches the engineer-owners."
+msgstr ""
+
+#: inc/leads.php:23
+msgid "No leads yet — they appear here the moment someone submits your inquiry form."
+msgstr ""
+
+#: inc/blocks-convert.php:112
+msgid "No published products match yet — add products in the admin, or relax the series filter."
+msgstr ""
+
+#: inc/layouts.php:278
+msgid "No. 28 Longshan Road, Daya Bay\nHuizhou, Guangdong, China"
+msgstr ""
+
+#: inc/layouts.php:251
+msgid "Not sure which model fits?"
+msgstr ""
+
+#: inc/blocks-content.php:264
+msgid "Number (e.g. 99% / 12+)"
+msgstr ""
+
+#: inc/blocks-content.php:253
+msgid "Numbers"
+msgstr ""
+
+#: inc/layouts.php:162
+msgid "OEM / ODM SERVICES"
+msgstr ""
+
+#: inc/layouts.php:40
+msgid "OEM / ODM drinking-water equipment, engineered in Daya Bay"
+msgstr ""
+
+#: inc/layouts.php:43
+#: inc/layouts.php:166
+#: inc/layouts.php:210
+msgid "OEM / ODM program"
+msgstr ""
+
+#: inc/layouts.php:197
+msgid "OEM questions we hear most"
+msgstr ""
+
+#: inc/layouts.php:117
+msgid "OUR STORY"
+msgstr ""
+
+#: inc/layouts.php:235
+msgid "Office"
+msgstr ""
+
+#: inc/layouts.php:149
+msgid "On site in Daya Bay or by live video call."
+msgstr ""
+
+#: inc/layouts.php:381
+msgid "One line that says what this page promises the visitor."
+msgstr ""
+
+#: inc/layouts.php:75
+msgid "One roof in Huizhou Daya Bay"
+msgstr ""
+
+#: inc/patterns.php:95
+msgid "One supporting sentence that makes the promise concrete and credible."
+msgstr ""
+
+#: inc/layouts.php:140
+msgid "One window"
+msgstr ""
+
+#: inc/seeder.php:53
+msgid "Only administrators can fill layouts (your account lacks the unfiltered_html capability)."
+msgstr ""
+
+#: inc/seeder.php:104
+msgid "Open any of them in the editor — every section is now a Dazhen block you can restyle."
+msgstr ""
+
+#: inc/blocks-convert.php:46
+msgid "Order by"
+msgstr ""
+
+#: inc/layouts.php:302
+msgid "Ordering, quality, logistics and after-sales — the honest short answers."
+msgstr ""
+
+#: inc/blocks-convert.php:430
+msgid "Outline (secondary)"
+msgstr ""
+
+#: inc/patterns.php:128
+msgid "Own labs and tooling workshop."
+msgstr ""
+
+#: inc/layouts.php:379
+msgid "PAGE EYEBROW"
+msgstr ""
+
+#: inc/layouts.php:353
+#: inc/patterns.php:186
+msgid "PARTNERS SAY"
+msgstr ""
+
+#: inc/layouts.php:82
+#: inc/patterns.php:154
+msgid "PRODUCT LINES"
+msgstr ""
+
+#: inc/patterns.php:66
+msgid "Page — About Us · 关于我们"
+msgstr ""
+
+#: inc/patterns.php:71
+msgid "Page — Campaign Landing · 活动落地页"
+msgstr ""
+
+#: inc/patterns.php:69
+msgid "Page — Contact · 联系我们"
+msgstr ""
+
+#: inc/patterns.php:70
+msgid "Page — FAQ · 常见问题"
+msgstr ""
+
+#: inc/patterns.php:65
+msgid "Page — Home · 首页"
+msgstr ""
+
+#: inc/patterns.php:67
+msgid "Page — OEM/ODM Services · 服务页"
+msgstr ""
+
+#: inc/patterns.php:68
+msgid "Page — Solutions · 方案页"
+msgstr ""
+
+#: inc/patterns.php:72
+msgid "Page — Starter · 通用起步页"
+msgstr ""
+
+#: inc/engine.php:72
+msgid "Paper (light)"
+msgstr ""
+
+#: inc/engine.php:73
+msgid "Paper — alternate tint"
+msgstr ""
+
+#: inc/blocks-proof.php:230
+msgid "Parameter"
+msgstr ""
+
+#: inc/blocks-proof.php:224
+msgid "Parameters"
+msgstr ""
+
+#: inc/blocks-proof.php:102
+msgid "Person"
+msgstr ""
+
+#: inc/layouts.php:357
+msgid "Pet retail chain, DE"
+msgstr ""
+
+#: inc/blocks-convert.php:304
+msgid "Phone"
+msgstr ""
+
+#: inc/layouts.php:276
+#: inc/leads.php:64
+#: inc/leads.php:159
+msgid "Phone / WhatsApp"
+msgstr ""
+
+#: inc/blocks-convert.php:268
+msgid "Phone, email, address and working-hours cards — with the Dazhen theme these read your Customizer contact settings by default."
+msgstr ""
+
+#: inc/layouts.php:398
+msgid "Pick a different icon per card from the sidebar."
+msgstr ""
+
+#: inc/layouts.php:188
+msgid "Pilot batch of 50–100 units for your market test."
+msgstr ""
+
+#: inc/leads.php:112
+msgid "Please fill in your name and a valid email."
+msgstr ""
+
+#: inc/layouts.php:397
+msgid "Point one"
+msgstr ""
+
+#: inc/layouts.php:399
+msgid "Point three"
+msgstr ""
+
+#: inc/layouts.php:398
+msgid "Point two"
+msgstr ""
+
+#: inc/layouts.php:244
+msgid "Popular picks by scenario"
+msgstr ""
+
+#: inc/blocks-convert.php:240
+msgid "Pre-filled opening message (optional)"
+msgstr ""
+
+#: inc/blocks-convert.php:194
+#: inc/blocks-convert.php:239
+#: inc/blocks-convert.php:422
+msgid "Pre-filled product (optional)"
+msgstr ""
+
+#: inc/patterns.php:96
+msgid "Primary action"
+msgstr ""
+
+#: inc/blocks-content.php:44
+msgid "Primary button — label"
+msgstr ""
+
+#: inc/blocks-content.php:45
+msgid "Primary button — link"
+msgstr ""
+
+#: inc/blocks-content.php:46
+msgid "Primary button — pre-filled product (optional)"
+msgstr ""
+
+#: inc/blocks-content.php:298
+msgid "Process Steps"
+msgstr ""
+
+#: inc/patterns.php:165
+msgid "Process — steps · 流程步骤"
+msgstr ""
+
+#: inc/leads.php:66
+msgid "Product interest"
+msgstr ""
+
+#: inc/blocks-convert.php:43
+msgid "Product series slug (optional)"
+msgstr ""
+
+#: inc/layouts.php:449
+msgid "Product-launch page with testimonials."
+msgstr ""
+
+#: inc/patterns.php:174
+msgid "Production"
+msgstr ""
+
+#: inc/blocks-convert.php:20
+msgid "Products Grid"
+msgstr ""
+
+#: inc/blocks-convert.php:38
+msgid "Products settings"
+msgstr ""
+
+#: inc/patterns.php:150
+msgid "Products — live grid · 产品网格(动态)"
+msgstr ""
+
+#: inc/layouts.php:185
+msgid "Proposal & costing"
+msgstr ""
+
+#: inc/blocks-proof.php:284
+msgid "Q&A"
+msgstr ""
+
+#: inc/blocks-proof.php:286
+#: inc/blocks-proof.php:290
+msgid "Question"
+msgstr ""
+
+#: inc/layouts.php:319
+msgid "Question not answered?"
+msgstr ""
+
+#: inc/blocks-proof.php:279
+msgid "Questions"
+msgstr ""
+
+#: inc/patterns.php:198
+msgid "Questions and answers as native accordions."
+msgstr ""
+
+#: inc/layouts.php:237
+msgid "Quiet hotel-room kettles and corridor ice stations."
+msgstr ""
+
+#: inc/blocks-proof.php:97
+#: inc/blocks-proof.php:101
+msgid "Quote"
+msgstr ""
+
+#: inc/blocks-convert.php:401
+msgid "Quote Button"
+msgstr ""
+
+#: inc/blocks-convert.php:418
+msgid "Quote button"
+msgstr ""
+
+#: inc/blocks-proof.php:89
+#: inc/blocks-proof.php:95
+msgid "Quotes"
+msgstr ""
+
+#: inc/layouts.php:358
+#: inc/patterns.php:190
+msgid "R. Tanaka"
+msgstr ""
+
+#: inc/layouts.php:272
+msgid "REACH US"
+msgstr ""
+
+#: inc/blocks-convert.php:52
+msgid "Random"
+msgstr ""
+
+#: inc/layouts.php:66
+msgid "Real engineering team"
+msgstr ""
+
+#: inc/layouts.php:387
+msgid "Replace this text with your story, spec or argument — then use the sidebar to swap the image, flip the columns or restyle the background."
+msgstr ""
+
+#: inc/patterns.php:172
+msgid "Requirement"
+msgstr ""
+
+#: inc/layouts.php:184
+msgid "Requirement & spec freeze"
+msgstr ""
+
+#: inc/layouts.php:209
+msgid "Requirement, target price, timeline — the more you share, the sharper our first quote."
+msgstr ""
+
+#: inc/layouts.php:365
+msgid "Reserve a pilot run before the season."
+msgstr ""
+
+#: inc/patterns.php:189
+msgid "Retail chain, DE"
+msgstr ""
+
+#: inc/layouts.php:311
+msgid "Retail-ready color boxes or neutral brown boxes, palletized for container loading."
+msgstr ""
+
+#: inc/blocks-proof.php:103
+msgid "Role / company"
+msgstr ""
+
+#: inc/blocks-proof.php:226
+msgid "Row"
+msgstr ""
+
+#: inc/blocks-proof.php:219
+msgid "Rows"
+msgstr ""
+
+#: inc/layouts.php:230
+msgid "SCENARIOS"
+msgstr ""
+
+#: inc/layouts.php:385
+#: inc/patterns.php:141
+msgid "SECTION EYEBROW"
+msgstr ""
+
+#: inc/layouts.php:224
+msgid "SOLUTIONS"
+msgstr ""
+
+#: inc/layouts.php:207
+msgid "START A PROJECT"
+msgstr ""
+
+#: inc/patterns.php:173
+msgid "Samples"
+msgstr ""
+
+#: inc/layouts.php:437
+msgid "Scenario cards plus a live product grid."
+msgstr ""
+
+#: inc/patterns.php:97
+msgid "Secondary"
+msgstr ""
+
+#: inc/blocks-content.php:47
+#: inc/blocks-convert.php:195
+msgid "Secondary button — label"
+msgstr ""
+
+#: inc/blocks-content.php:48
+#: inc/blocks-convert.php:196
+msgid "Secondary button — link"
+msgstr ""
+
+#: inc/blocks-convert.php:346
+msgid "Section (container)"
+msgstr ""
+
+#: inc/engine.php:54
+msgid "Section heading"
+msgstr ""
+
+#: inc/engine.php:63
+msgid "Section look"
+msgstr ""
+
+#: inc/leads.php:172
+msgid "Send inquiry"
+msgstr ""
+
+#: inc/layouts.php:94
+#: inc/patterns.php:216
+msgid "Send us your spec — get a quote in 24 hours"
+msgstr ""
+
+#: inc/layouts.php:432
+msgid "Services — OEM journey, FAQ, inquiry form"
+msgstr ""
+
+#: inc/engine.php:330
+msgid "Shield — reliability"
+msgstr ""
+
+#: inc/layouts.php:190
+msgid "Shipment & after-sales"
+msgstr ""
+
+#: inc/layouts.php:348
+msgid "Ships flat"
+msgstr ""
+
+#: inc/patterns.php:142
+msgid "Show the factory, the process or the product"
+msgstr ""
+
+#: inc/patterns.php:29
+msgid "Single Dazhen blocks with demo content — pick, insert, restyle."
+msgstr ""
+
+#: inc/layouts.php:338
+msgid "Smart pet fountain 2026"
+msgstr ""
+
+#: inc/layouts.php:130
+msgid "Smart pet fountain series ships 400k units in 12 months."
+msgstr ""
+
+#: inc/patterns.php:189
+msgid "Sold out our first container in six weeks."
+msgstr ""
+
+#: inc/layouts.php:357
+msgid "Sold out our first container in six weeks. The reorder was a no-brainer."
+msgstr ""
+
+#: inc/layouts.php:436
+msgid "Solutions — scenarios + product picks"
+msgstr ""
+
+#: inc/engine.php:83
+msgid "Spacious"
+msgstr ""
+
+#: inc/engine.php:338
+msgid "Sparkle — innovation"
+msgstr ""
+
+#: inc/layouts.php:141
+msgid "Spec sheets, test reports, drawings and inspection photos shared by default."
+msgstr ""
+
+#: inc/blocks-proof.php:202
+msgid "Specs Table"
+msgstr ""
+
+#: inc/blocks-content.php:60
+msgid "Split — text + image"
+msgstr ""
+
+#: inc/layouts.php:165
+msgid "Start an OEM project"
+msgstr ""
+
+#: inc/layouts.php:452
+msgid "Starter — clean generic page"
+msgstr ""
+
+#: inc/blocks-content.php:260
+msgid "Stat"
+msgstr ""
+
+#: inc/blocks-content.php:258
+msgid "Stats"
+msgstr ""
+
+#: inc/blocks-content.php:235
+msgid "Stats Strip"
+msgstr ""
+
+#: inc/patterns.php:104
+msgid "Stats — number strip · 数据条"
+msgstr ""
+
+#: inc/blocks-content.php:322
+msgid "Step"
+msgstr ""
+
+#: inc/blocks-content.php:327
+msgid "Step text"
+msgstr ""
+
+#: inc/blocks-content.php:326
+msgid "Step title"
+msgstr ""
+
+#: inc/blocks-content.php:315
+#: inc/blocks-content.php:320
+msgid "Steps"
+msgstr ""
+
+#: inc/patterns.php:138
+msgid "Story on one side, image on the other, with a checklist."
+msgstr ""
+
+#: inc/blocks-convert.php:426
+msgid "Style"
+msgstr ""
+
+#: inc/layouts.php:74
+msgid "THE FACTORY"
+msgstr ""
+
+#: inc/layouts.php:180
+msgid "THE JOURNEY"
+msgstr ""
+
+#: inc/layouts.php:267
+msgid "Talk to the factory directly"
+msgstr ""
+
+#: inc/layouts.php:208
+msgid "Tell us what you want to build"
+msgstr ""
+
+#: inc/blocks-proof.php:70
+msgid "Testimonials"
+msgstr ""
+
+#: inc/patterns.php:182
+msgid "Testimonials — quotes · 客户评价"
+msgstr ""
+
+#: inc/blocks-content.php:200
+#: inc/blocks-convert.php:298
+msgid "Text"
+msgstr ""
+
+#: inc/blocks-content.php:107
+msgid "Text + Image"
+msgstr ""
+
+#: inc/patterns.php:137
+msgid "Text + Image — two columns · 图文分栏"
+msgstr ""
+
+#: inc/blocks-proof.php:166
+msgid "Text fallback (one name per line)"
+msgstr ""
+
+#: inc/patterns.php:224
+msgid "The B2B form — submissions land in Inquiries and forward by email (Dazhen theme)."
+msgstr ""
+
+#: inc/blocks-convert.php:223
+msgid "The B2B lead form. With the Dazhen theme active it renders the theme's 7-field inquiry form (submissions land in Inquiries + email). Standalone it renders the plugin's own compact form."
+msgstr ""
+
+#: inc/layouts.php:433
+msgid "The OEM/ODM pitch with a 7-step process."
+msgstr ""
+
+#: inc/layouts.php:406
+msgid "The amber button opens the inquiry popup by default."
+msgstr ""
+
+#: inc/blocks-content.php:363
+msgid "The company story as a year-by-year timeline."
+msgstr ""
+
+#: inc/blocks-convert.php:173
+msgid "The conversion banner: headline, promise line and the amber quote button (opens the inquiry popup with the Dazhen theme)."
+msgstr ""
+
+#: inc/blocks-convert.php:402
+msgid "The conversion button anywhere you need it — opens the inquiry popup with the Dazhen theme, or links anywhere on other themes."
+msgstr ""
+
+#: inc/layouts.php:425
+msgid "The full homepage for a B2B manufacturer."
+msgstr ""
+
+#: inc/layouts.php:358
+msgid "The only supplier whose first sample matched the spec sheet exactly."
+msgstr ""
+
+#: inc/blocks-content.php:22
+msgid "The page opener: eyebrow, big headline, intro and two buttons — centered, or split with a product image."
+msgstr ""
+
+#: inc/layouts.php:125
+msgid "The road so far"
+msgstr ""
+
+#: inc/layouts.php:335
+msgid "The smart pet fountain your list will reorder"
+msgstr ""
+
+#: inc/blocks-convert.php:347
+msgid "The universal container: pick the background and padding, then drop ANY blocks inside — Dazhen blocks, core blocks, Stackable, anything."
+msgstr ""
+
+#: inc/layouts.php:129
+msgid "Thick-film heating lab opens; EU export begins."
+msgstr ""
+
+#: inc/layouts.php:66
+msgid "Thick-film heating, compressor cooling and control boards developed on site."
+msgstr ""
+
+#: inc/layouts.php:394
+msgid "Three things worth knowing"
+msgstr ""
+
+#: inc/layouts.php:273
+msgid "Three ways, one team"
+msgstr ""
+
+#: inc/blocks-content.php:379
+msgid "Timeline"
+msgstr ""
+
+#: inc/blocks-content.php:199
+#: inc/blocks-convert.php:297
+#: inc/engine.php:58
+msgid "Title"
+msgstr ""
+
+#: inc/blocks-convert.php:51
+msgid "Title A–Z"
+msgstr ""
+
+#: inc/layouts.php:188
+msgid "Tooling & pilot run"
+msgstr ""
+
+#: inc/layouts.php:185
+msgid "Transparent BOM-level quote: unit price, tooling, certifications, lead time."
+msgstr ""
+
+#: inc/layouts.php:347
+msgid "Triple-stage filter with 30-day cartridge subscription potential."
+msgstr ""
+
+#: inc/blocks-convert.php:309
+msgid "Truck"
+msgstr ""
+
+#: inc/engine.php:336
+msgid "Truck — logistics"
+msgstr ""
+
+#: inc/layouts.php:346
+msgid "Truly quiet"
+msgstr ""
+
+#: inc/layouts.php:118
+msgid "Twelve years, one focus"
+msgstr ""
+
+#: inc/layouts.php:77
+msgid "Two SMT lines, four assembly lines and a 100%通电 aging room. You are welcome to audit us on site or by video call before the first order."
+msgstr ""
+
+#: inc/seeder.php:64
+msgid "Unknown layout."
+msgstr ""
+
+#: inc/blocks-proof.php:166
+msgid "Used only when no logo images are set."
+msgstr ""
+
+#: inc/blocks-proof.php:231
+msgid "Value"
+msgstr ""
+
+#: inc/engine.php:78
+msgid "Vertical padding"
+msgstr ""
+
+#: inc/blocks-convert.php:55
+#: inc/layouts.php:87
+#: inc/patterns.php:158
+msgid "View all products"
+msgstr ""
+
+#: inc/blocks-convert.php:161
+msgid "View details →"
+msgstr ""
+
+#: inc/layouts.php:60
+msgid "WHY DAZHEN"
+msgstr ""
+
+#: inc/layouts.php:342
+msgid "WHY THIS MODEL"
+msgstr ""
+
+#: inc/patterns.php:123
+msgid "WHY US"
+msgstr ""
+
+#: inc/layouts.php:225
+msgid "Water equipment for every place people drink"
+msgstr ""
+
+#: inc/patterns.php:172
+msgid "We freeze the spec within 48 hours."
+msgstr ""
+
+#: inc/layouts.php:142
+msgid "We plan tooling and spare parts two product generations ahead."
+msgstr ""
+
+#: inc/layouts.php:286
+msgid "We reply within one working day with next steps."
+msgstr ""
+
+#: inc/patterns.php:229
+msgid "We reply within one working day."
+msgstr ""
+
+#: inc/layouts.php:184
+msgid "We turn your idea or reference into a frozen spec sheet within 48 hours."
+msgstr ""
+
+#: inc/layouts.php:313
+msgid "Welcome any working day — we arrange airport pickup from Shenzhen Bao'an."
+msgstr ""
+
+#: inc/layouts.php:137
+msgid "What a partner can expect"
+msgstr ""
+
+#: inc/patterns.php:202
+msgid "What buyers ask most"
+msgstr ""
+
+#: inc/layouts.php:310
+msgid "What certifications can you provide?"
+msgstr ""
+
+#: inc/leads.php:162
+msgid "What do you need? *"
+msgstr ""
+
+#: inc/blocks-content.php:391
+msgid "What happened"
+msgstr ""
+
+#: inc/patterns.php:204
+msgid "What is the MOQ?"
+msgstr ""
+
+#: inc/layouts.php:199
+msgid "What is the minimum order?"
+msgstr ""
+
+#: inc/layouts.php:312
+msgid "Which incoterms do you ship on?"
+msgstr ""
+
+#: inc/layouts.php:201
+msgid "Who owns the tooling?"
+msgstr ""
+
+#: inc/layouts.php:336
+msgid "Wireless pump, 2.5L, app-free simplicity — the model behind 400k repeat orders. Launch it under your brand in 45 days."
+msgstr ""
+
+#: inc/blocks-convert.php:43
+msgid "With the Dazhen theme active pick from Appearance → product series slugs, e.g. pet-fountain."
+msgstr ""
+
+#: inc/blocks-convert.php:423
+msgid "With the Dazhen theme and this empty, the button opens the inquiry popup."
+msgstr ""
+
+#: inc/layouts.php:111
+msgid "Work with us"
+msgstr ""
+
+#: inc/engine.php:335
+msgid "Wrench — engineering"
+msgstr ""
+
+#: inc/blocks-content.php:390
+msgid "Year"
+msgstr ""
+
+#: inc/layouts.php:309
+msgid "Yes — 100–300 unit trial orders on existing models so your market can test before committing."
+msgstr ""
+
+#: inc/layouts.php:200
+msgid "Yes — labels, manuals and packaging in EN / DE / FR / ES / RU / JP and more."
+msgstr ""
+
+#: inc/layouts.php:182
+msgid "You always know which step your project is on."
+msgstr ""
+
+#: inc/layouts.php:201
+msgid "You do, once paid. We store and maintain it for your orders only."
+msgstr ""
+
+#: dazhen-blocks.php:87
+msgid "Your active Dazhen theme (v0.2 or older) already includes a block kit. Update the Dazhen theme to v0.4 or newer and this plugin will take over automatically — no action needed."
+msgstr ""
+
+#: inc/layouts.php:163
+msgid "Your brand, our production line"
+msgstr ""
+
+#: inc/leads.php:153
+msgid "Your name *"
+msgstr ""
+
+#: inc/layouts.php:380
+msgid "Your page title"
+msgstr ""
+
+#: inc/patterns.php:151
+msgid "Your product catalog, always up to date."
+msgstr ""
+
+#: inc/patterns.php:94
+msgid "Your strongest promise, in one line"
+msgstr ""
+
+#: inc/layouts.php:347
+msgid "Zero-return filter"
+msgstr ""
+
+#: inc/layouts.php:54
+#: inc/patterns.php:110
+msgid "countries served"
+msgstr ""
+
+#: inc/patterns.php:111
+msgid "inspection pass rate"
+msgstr ""
+
+#: inc/layouts.php:53
+msgid "passed inspection rate"
+msgstr ""
+
+#: inc/layouts.php:55
+#: inc/patterns.php:112
+msgid "quote turnaround"
+msgstr ""
+
+#: inc/layouts.php:277
+msgid "sales@dazhen.example\nRFQs answered within 24h"
+msgstr ""
+
+#: inc/layouts.php:173
+msgid "steps from idea to shipment"
+msgstr ""
+
+#: inc/layouts.php:174
+msgid "typical new-model lead time"
+msgstr ""
+
+#: inc/patterns.php:109
+msgid "years experience"
+msgstr ""
+
+#: inc/layouts.php:52
+msgid "years manufacturing"
+msgstr ""
+
+
+#: inc/bootstrap.php
+msgid "Home"
+msgstr ""
+
+#: inc/bootstrap.php
+msgid "About Us"
+msgstr ""
+
+#: inc/bootstrap.php
+msgid "Services"
+msgstr ""
+
+#: inc/bootstrap.php
+msgid "Solutions"
+msgstr ""
+
+#: inc/bootstrap.php
+msgid "Contact"
+msgstr ""
+
+#: inc/bootstrap.php
+msgid "FAQ"
+msgstr ""
+
+#: inc/bootstrap.php
+msgid "Blog"
+msgstr ""
+
+#: inc/bootstrap.php
+msgid "Products"
+msgstr ""
+
+#: inc/bootstrap.php
+msgid "%d Dazhen page is missing."
+msgid_plural "%d Dazhen pages are missing."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/bootstrap.php
+msgid "Missing: %s — create them pre-filled with their ready-made layouts?"
+msgstr ""
+
+#: inc/bootstrap.php
+msgid "Create the pages · 一键初始化整站"
+msgstr ""
+
+#: inc/bootstrap.php
+msgid "Dismiss"
+msgstr ""
+
+#: inc/bootstrap.php
+msgid "Your Dazhen site is ready."
+msgstr ""
+
+#: inc/bootstrap.php
+msgid "Created: %s."
+msgstr ""
+
+#: inc/bootstrap.php
+msgid "Navigation menus built: %s."
+msgstr ""
+
+#: inc/bootstrap.php
+msgid "Visit the site"
+msgstr ""
+
+#: inc/bootstrap.php
+msgid "Edit the pages"
+msgstr ""
+
+msgid "The Dazhen pages could not be created."
+msgstr ""
+
+msgid "Your account needs the Administrator role (page creation + unfiltered HTML). Log in as an administrator and try again."
+msgstr ""
