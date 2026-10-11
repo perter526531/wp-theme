@@ -16,6 +16,21 @@
 defined( 'ABSPATH' ) || exit;
 
 /**
+ * Resolve a project-type archive and keep the fallback usable before terms exist.
+ */
+function kabel_project_type_url( string $slug ): string {
+	$term = get_term_by( 'slug', $slug, 'project_type' );
+	if ( $term && ! is_wp_error( $term ) ) {
+		$url = get_term_link( $term );
+		if ( ! is_wp_error( $url ) ) {
+			return (string) $url;
+		}
+	}
+
+	return home_url( '/projects/type/' . $slug . '/' );
+}
+
+/**
  * The fallback navigation tree (labels kept verbatim from the live site).
  *
  * @return array<int, array{url:string,label:string,children?:array<int,array{url:string,label:string}}}>
@@ -57,8 +72,8 @@ function kabel_nav_fallback_tree(): array {
 			'url'      => $projects,
 			'label'    => __( 'PROJECTS', 'kabel' ),
 			'children' => array(
-				array( 'url' => home_url( '/category/home-renovation-projects/' ), 'label' => __( 'Home Renovation Projects', 'kabel' ) ),
-				array( 'url' => home_url( '/category/engineering-projects/' ), 'label' => __( 'Engineering Projects', 'kabel' ) ),
+				array( 'url' => kabel_project_type_url( 'home-renovation-projects' ), 'label' => __( 'Home Renovation Projects', 'kabel' ) ),
+				array( 'url' => kabel_project_type_url( 'engineering-projects' ), 'label' => __( 'Engineering Projects', 'kabel' ) ),
 			),
 		),
 		array(
