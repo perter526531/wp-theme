@@ -411,9 +411,11 @@ function kbl_bootstrap_terms(): array {
                         'exterior-paint' => array( __( 'Exterior Paint', 'kabel-blocks' ), __( 'Weatherproof colour for exterior walls.', 'kabel-blocks' ) ),
                 ),
                 'category'       => array(
-                        'company-news'             => array( __( 'Company News', 'kabel-blocks' ), __( 'Showroom openings, brand milestones and company announcements.', 'kabel-blocks' ) ),
-                        'industry-news'            => array( __( 'Industry News', 'kabel-blocks' ), __( 'Design trends and updates from the decorative-coatings world.', 'kabel-blocks' ) ),
-                        'knowledge'                => array( __( 'Knowledge', 'kabel-blocks' ), __( 'Plain-language paint knowledge and application guidance.', 'kabel-blocks' ) ),
+                        'company-news'  => array( __( 'Company News', 'kabel-blocks' ), __( 'Showroom openings, brand milestones and company announcements.', 'kabel-blocks' ) ),
+                        'industry-news' => array( __( 'Industry News', 'kabel-blocks' ), __( 'Design trends and updates from the decorative-coatings world.', 'kabel-blocks' ) ),
+                        'knowledge'     => array( __( 'Knowledge', 'kabel-blocks' ), __( 'Plain-language paint knowledge and application guidance.', 'kabel-blocks' ) ),
+                ),
+                'project_type'   => array(
                         'home-renovation-projects' => array( __( 'Home Renovation Projects', 'kabel-blocks' ), __( 'Residential references finished with Kabel coatings.', 'kabel-blocks' ) ),
                         'engineering-projects'     => array( __( 'Engineering Projects', 'kabel-blocks' ), __( 'Commercial and engineering references finished with Kabel coatings.', 'kabel-blocks' ) ),
                 ),
@@ -940,9 +942,9 @@ function kbl_seed_projects(): array {
                         set_post_thumbnail( $post_id, $featured );
                 }
 
-                $category = get_category_by_slug( $data['category'] );
-                if ( $category ) {
-                        wp_set_object_terms( $post_id, array( (int) $category->term_id ), 'category' );
+                $project_type = get_term_by( 'slug', $data['category'], 'project_type' );
+                if ( $project_type && ! is_wp_error( $project_type ) ) {
+                        wp_set_object_terms( $post_id, array( (int) $project_type->term_id ), 'project_type' );
                 }
 
                 $created[] = $data['title'];
@@ -1217,8 +1219,8 @@ function kbl_build_nav_menus( array $ids, array $term_ids = array() ): array {
                                  * rows) wrapped into two lines and broke the
                                  * header layout. */
                                 'projects'     => array( 'type' => 'custom', 'url' => $projects, 'title' => __( 'PROJECTS', 'kabel-blocks' ) ),
-                                'renovation'   => array( 'type' => 'term', 'id' => $term_ids['category:home-renovation-projects'] ?? 0, 'taxonomy' => 'category', 'title' => __( 'Home Renovation Projects', 'kabel-blocks' ), 'parent' => 'projects' ),
-                                'engineering'  => array( 'type' => 'term', 'id' => $term_ids['category:engineering-projects'] ?? 0, 'taxonomy' => 'category', 'title' => __( 'Engineering Projects', 'kabel-blocks' ), 'parent' => 'projects' ),
+                                'renovation'   => array( 'type' => 'term', 'id' => $term_ids['project_type:home-renovation-projects'] ?? 0, 'taxonomy' => 'project_type', 'title' => __( 'Home Renovation Projects', 'kabel-blocks' ), 'parent' => 'projects' ),
+                                'engineering'  => array( 'type' => 'term', 'id' => $term_ids['project_type:engineering-projects'] ?? 0, 'taxonomy' => 'project_type', 'title' => __( 'Engineering Projects', 'kabel-blocks' ), 'parent' => 'projects' ),
                                 'procurement-pg' => array( 'type' => 'page', 'id' => $ids['project-procurement'] ?? 0, 'title' => __( 'Project Procurement', 'kabel-blocks' ), 'parent' => 'projects' ),
                                 'customize'      => array( 'type' => 'page', 'id' => $ids['customize'] ?? 0, 'title' => __( 'Customize', 'kabel-blocks' ), 'parent' => 'projects' ),
 
