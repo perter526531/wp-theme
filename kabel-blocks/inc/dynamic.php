@@ -169,7 +169,7 @@ function kbl3_standalone_form( string $button = 'Send Inquiry', string $email = 
         $out .= '<input type="text" name="country" placeholder="' . esc_attr__( 'Country / Company', 'kabel-blocks' ) . '" />';
         $out .= '</div>';
         $out .= '<input type="text" name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;" aria-hidden="true" />';
-        $out .= '<textarea name="message" rows="4" placeholder="' . esc_attr__( 'How can we help?', 'kabel-blocks' ) . '"></textarea>';
+        $out .= '<textarea name="message" rows="4" required placeholder="' . esc_attr__( 'How can we help?', 'kabel-blocks' ) . '"></textarea>';
         $out .= '<div class="kbl3-btnwrap" style="text-align:center"><button type="submit" class="kbl3-btn kbl3-btn--gold kbl3-btn--m">' . esc_html( '' !== $button ? $button : __( 'Send Inquiry', 'kabel-blocks' ) ) . '</button></div>';
         $out .= '<p class="kbl3-form__status" data-kbl-form-note role="status" aria-live="polite"></p>';
         $out .= '</form>';
