@@ -19,6 +19,27 @@ if ( kabel_render_block_page() ) {
 
 get_header();
 
+/*
+ * The one-click bootstrap seeds the homepage as blocks. Prefer that editable
+ * content when it exists, while keeping the original curated PHP homepage as
+ * a backwards-compatible fallback for installations without block content.
+ */
+if ( have_posts() ) {
+	while ( have_posts() ) {
+		the_post();
+		if ( '' !== trim( (string) get_post_field( 'post_content', get_the_ID() ) ) ) {
+			?>
+			<main id="primary" class="site-main">
+				<?php the_content(); ?>
+			</main>
+			<?php
+			get_footer();
+			return;
+		}
+	}
+	rewind_posts();
+}
+
 $products_query = kabel_get_products( array( 'posts_per_page' => 6 ) );
 $posts_query    = new WP_Query( array(
         'post_type'      => 'post',
