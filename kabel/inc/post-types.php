@@ -158,7 +158,7 @@ function kabel_migrate_project_categories(): void {
 	update_option( 'kabel_project_taxonomy_migration_v1', '1', false );
 	flush_rewrite_rules();
 }
-add_action( 'init', 'kabel_migrate_project_categories', 20 );
+add_action( 'admin_init', 'kabel_migrate_project_categories' );
 
 /**
  * Redirect legacy project-category URLs to the dedicated project taxonomy.
