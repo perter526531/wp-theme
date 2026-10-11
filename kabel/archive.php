@@ -23,12 +23,12 @@ $in_project_type       = $queried_project_type instanceof WP_Term
 	&& in_array( $queried_project_type->slug, $project_type_slugs, true );
 $is_projects_archive   = is_post_type_archive( 'projects' ) || $in_project_type;
 
-if ( $is_blog_archive && ! $in_project_category ) {
+if ( $is_blog_archive && ! $in_project_type ) {
 	$archive_title = ( is_category() || is_tag() )
 		? (string) single_term_title( '', false )
 		: wp_strip_all_tags( (string) get_the_archive_title() );
 } elseif ( $is_projects_archive ) {
-	$archive_title = $in_project_category
+	$archive_title = $in_project_type
 		? (string) single_term_title( '', false )
 		: (string) post_type_archive_title( '', false );
 } else {
@@ -58,11 +58,11 @@ if ( $is_blog_archive && ! $in_project_category ) {
 </header>
 
 <section class="zone-b section">
-	<?php if ( $is_blog_archive && ! $in_project_category ) { kabel_sidebar_open(); } ?>
+	<?php if ( $is_blog_archive && ! $in_project_type ) { kabel_sidebar_open(); } ?>
 	<div class="container">
 		<?php if ( $is_projects_archive ) : ?>
 			<nav class="blog-toolbar" aria-label="<?php esc_attr_e( 'Filter projects by class', 'kabel' ); ?>">
-				<a class="blog-chip<?php echo $is_projects_archive && ! $in_project_category ? ' is-active' : ''; ?>" href="<?php echo esc_url( (string) get_post_type_archive_link( 'projects' ) ); ?>"<?php echo $is_projects_archive && ! $in_project_category ? ' aria-current="page"' : ''; ?>>
+				<a class="blog-chip<?php echo $is_projects_archive && ! $in_project_type ? ' is-active' : ''; ?>" href="<?php echo esc_url( (string) get_post_type_archive_link( 'projects' ) ); ?>"<?php echo $is_projects_archive && ! $in_project_type ? ' aria-current="page"' : ''; ?>>
 					<?php esc_html_e( 'All', 'kabel' ); ?>
 				</a>
 				<?php foreach ( $project_type_slugs as $project_type_slug ) : ?>
@@ -122,7 +122,7 @@ if ( $is_blog_archive && ! $in_project_category ) {
 			<p class="empty-state"><?php esc_html_e( 'Nothing published here yet.', 'kabel' ); ?></p>
 		<?php endif; ?>
 	</div>
-	<?php if ( $is_blog_archive && ! $in_project_category ) { get_sidebar(); kabel_sidebar_close(); } ?>
+	<?php if ( $is_blog_archive && ! $in_project_type ) { get_sidebar(); kabel_sidebar_close(); } ?>
 </section>
 
 <?php
