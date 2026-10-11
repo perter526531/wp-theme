@@ -5,8 +5,8 @@
  * Data model (Kabel):
  *   product       — paint families / series (6 families, /products/ archive)
  *   projects      — project references (home renovation + engineering,
- *                   /projects/ archive, classified with the post Category
- *                   taxonomy — same URLs as the original site)
+ *                   /projects/ archive, classified with the dedicated
+ *                   project_type taxonomy)
  *   kabel_inquiry — inquiries (private, admin-managed)
  *
  * @package Kabel
@@ -59,11 +59,7 @@ function kabel_register_post_types() {
 		'rewrite'           => array( 'slug' => 'product-series', 'with_front' => false ),
 	) );
 
-	/* ---------- Projects (project references) ----------
-	 * Same shape as the original site: the two reference classes
-	 * (Home Renovation Projects / Engineering Projects) are ordinary post
-	 * categories, so the archive URLs stay /category/... as before.
-	 */
+	/* ---------- Projects (project references) ---------- */
 	register_post_type( 'projects', array(
 		'labels'        => array(
 			'name'               => __( 'Projects', 'kabel' ),
@@ -85,9 +81,22 @@ function kabel_register_post_types() {
 		'menu_position' => 22,
 		'has_archive'   => true,
 		'rewrite'       => array( 'slug' => 'projects', 'with_front' => false ),
-		'taxonomies'    => array( 'category' ),
+		'taxonomies'    => array( 'project_type' ),
 		'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt' ),
 		'show_in_rest'  => true,
+	) );
+
+	register_taxonomy( 'project_type', 'projects', array(
+		'labels'            => array(
+			'name'          => __( 'Project Types', 'kabel' ),
+			'singular_name' => __( 'Project Type', 'kabel' ),
+			'menu_name'     => __( 'Project Types', 'kabel' ),
+		),
+		'hierarchical'      => true,
+		'public'            => true,
+		'show_admin_column' => true,
+		'show_in_rest'      => true,
+		'rewrite'           => array( 'slug' => 'projects/type', 'with_front' => false ),
 	) );
 
 	/* ---------- Inquiry (private, admin-managed) ---------- */
@@ -116,24 +125,66 @@ function kabel_register_post_types() {
 add_action( 'init', 'kabel_register_post_types' );
 
 /**
- * Category archives include project references.
+ * Move legacy project categories into the dedicated project taxonomy once.
  *
- * WordPress limits /category/... archives to posts, but on this site the two
- * reference classes (Home Renovation Projects / Engineering Projects) are
- * categories whose entries are 'projects' — include them in the loop so the
- * original /category/<class>/ URLs keep working.
+ * Category terms are retained so legacy inbound URLs can redirect safely; new
+ * project editing is isolated from news categories from this point forward.
  */
-function kabel_projects_in_category_archives( WP_Query $query ): void {
-	if ( is_admin() || ! $query->is_main_query() || ! $query->is_category() ) {
+function kabel_migrate_project_categories(): void {
+	if ( get_option( 'kabel_project_taxonomy_migration_v1' ) ) {
 		return;
 	}
-	$post_type = $query->get( 'post_type' );
-	if ( $post_type && 'post' !== $post_type ) {
-		return; // Something already customised the query.
+
+	$legacy_slugs = array( 'home-renovation-projects', 'engineering-projects' );
+	$project_ids  = get_posts( array(
+		'post_type'      => 'projects',
+		'post_status'    => 'any',
+		'posts_per_page' => -1,
+		'fields'         => 'ids',
+		'no_found_rows'  => true,
+	) );
+
+	foreach ( $project_ids as $project_id ) {
+		$slugs = wp_get_object_terms( (int) $project_id, 'category', array( 'fields' => 'slugs' ) );
+		if ( is_wp_error( $slugs ) ) {
+			continue;
+		}
+		$project_types = array_values( array_intersect( $legacy_slugs, $slugs ) );
+		if ( $project_types ) {
+			wp_set_object_terms( (int) $project_id, $project_types, 'project_type', false );
+		}
 	}
-	$query->set( 'post_type', array( 'post', 'projects' ) );
+
+	update_option( 'kabel_project_taxonomy_migration_v1', '1', false );
+	flush_rewrite_rules();
 }
-add_action( 'pre_get_posts', 'kabel_projects_in_category_archives' );
+add_action( 'init', 'kabel_migrate_project_categories', 20 );
+
+/**
+ * Redirect legacy project-category URLs to the dedicated project taxonomy.
+ */
+function kabel_redirect_legacy_project_category(): void {
+	if ( ! is_category() ) {
+		return;
+	}
+
+	$term = get_queried_object();
+	if ( ! $term instanceof WP_Term || ! in_array( $term->slug, array( 'home-renovation-projects', 'engineering-projects' ), true ) ) {
+		return;
+	}
+
+	$project_type = get_term_by( 'slug', $term->slug, 'project_type' );
+	if ( ! $project_type || is_wp_error( $project_type ) ) {
+		return;
+	}
+
+	$url = get_term_link( $project_type );
+	if ( ! is_wp_error( $url ) ) {
+		wp_safe_redirect( $url, 301 );
+		exit;
+	}
+}
+add_action( 'template_redirect', 'kabel_redirect_legacy_project_category' );
 
 /**
  * Flush rewrite rules on activation so custom URLs work immediately.
