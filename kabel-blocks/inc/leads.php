@@ -90,6 +90,24 @@ function kbl_leads_rest(): void {
 add_action( 'rest_api_init', 'kbl_leads_rest' );
 
 /**
+ * Limit the public endpoint to three accepted submissions per IP per minute.
+ *
+ * The rate-limit key is a one-way hash, so the transient does not expose a
+ * visitor address in the options table.
+ */
+function kbl_leads_allow_submission( string $ip ): bool {
+	$key  = 'kbl_lead_rl_' . md5( '' !== $ip ? $ip : 'unknown' );
+	$hits = (int) get_transient( $key );
+
+	if ( $hits >= 3 ) {
+		return false;
+	}
+
+	set_transient( $key, $hits + 1, MINUTE_IN_SECONDS );
+	return true;
+}
+
+/**
  * Handle a lead submission.
  */
 function kbl_leads_handle( WP_REST_Request $request ) {
@@ -108,11 +126,14 @@ function kbl_leads_handle( WP_REST_Request $request ) {
 		'message' => sanitize_textarea_field( (string) $request->get_param( 'message' ) ),
 	);
 
-	if ( '' === $data['person'] || ! is_email( $data['email'] ) ) {
-		return new WP_Error( 'kbl_invalid', __( 'Please fill in your name and a valid email.', 'kabel-blocks' ), array( 'status' => 400 ) );
+	if ( '' === $data['person'] || '' === $data['message'] || ! is_email( $data['email'] ) ) {
+		return new WP_Error( 'kbl_invalid', __( 'Please fill in your name, a valid email and a message.', 'kabel-blocks' ), array( 'status' => 400 ) );
 	}
 
 	$ip = isset( $_SERVER['REMOTE_ADDR'] ) ? sanitize_text_field( wp_unslash( $_SERVER['REMOTE_ADDR'] ) ) : '';
+	if ( ! kbl_leads_allow_submission( $ip ) ) {
+		return new WP_Error( 'kbl_rate_limited', __( 'Too many requests. Please wait a minute and try again.', 'kabel-blocks' ), array( 'status' => 429 ) );
+	}
 
 	$post_id = wp_insert_post( array(
 		'post_type'   => 'kbl_lead',
